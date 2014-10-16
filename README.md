@@ -7,13 +7,12 @@ Compiling and running the C code:
 - Windows: Visual Studio project files are provided in the *vcproj* folder (standalone test and demonstration files) and the *vcproj_mlink* folder (Mathematica MathLink interface)
 - Linux, MacOSX etc: see the makefiles in the *bin* folder (standalone test and demonstration files) and the *mlink* folder (Mathematica MathLink interface)
 
-The Mathematica `.cdf` (computable document format) demonstration files in the *test* folder can be viewed
-with the free [CDF Player](http://www.wolfram.com/cdf-player) or opened and edited with [Mathematica](http://www.wolfram.com/mathematica).
+The Mathematica `.cdf` (computable document format) demonstration files in the *test* folder can be viewed with the free [CDF Player](http://www.wolfram.com/cdf-player) or opened and edited with [Mathematica](http://www.wolfram.com/mathematica).
 
 License
 -------
-Copyright (c) 2014, Christian B. Mendl
-All rights reserved.
+Copyright (c) 2014, Christian B. Mendl  
+All rights reserved.  
 http://christian.mendl.net
 
 This program is free software; you can redistribute it and/or
