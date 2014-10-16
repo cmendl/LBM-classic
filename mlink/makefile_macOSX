@@ -1,0 +1,40 @@
+# set to appropriate path of the local Mathematica installation
+MLINKDIR = /Applications/Mathematica.app/SystemFiles/Links/MathLink/DeveloperKit
+
+# set this value with the result of evaluating $SystemID
+SYS = MacOSX-x86-64
+CADDSDIR = ${MLINKDIR}/CompilerAdditions
+
+INCDIR = ${CADDSDIR}
+LIBDIR = ${CADDSDIR}
+
+# Set these with appropriate libs for your system.
+EXTRALIBS = -lstdc++ -framework Foundation
+
+MLLIB = ML64i4
+
+MPREP = ${CADDSDIR}/mprep
+
+CCOPTS = -Wall -m64 -O3
+
+all: lbm2D.o lbm3D.o util.o lbm_mlink_macOSX.o lbmML.o
+	${CC} ${CCOPTS} -I${INCDIR} -L${LIBDIR} -l${MLLIB} ${EXTRALIBS} -o ${SYS}/lbmML $?
+
+lbm2D.o: ../src/lbm2D.c
+	${CC} -c -I${INCDIR} -I../include ${CCOPTS} $<
+
+lbm3D.o: ../src/lbm3D.c
+	${CC} -c -I${INCDIR} -I../include ${CCOPTS} $<
+
+util.o: ../src/util.c
+	${CC} -c -I${INCDIR} -I../include ${CCOPTS} $<
+
+.c.o:
+	${CC} -c -I${INCDIR} -I../include ${CCOPTS} $<
+
+lbm_mlink_macOSX.c: lbm_mlink.tm
+	${MPREP} -o $@ $?
+
+
+clean:
+	rm *.o

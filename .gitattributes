@@ -1,0 +1,10 @@
+# explicit declaration of text files
+*.c  text
+*.h  text
+*.tm text
+
+# treat Mathematica notebooks and "computable document format" (.cdf) files as binary
+*.nb  binary
+*.cdf binary
+
+*.dat binary

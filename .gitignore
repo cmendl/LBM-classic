@@ -1,0 +1,5 @@
+# ignore compiled C object files
+*.o
+
+# ignore Visual Studio "solution user options" (.suo) files
+*.suo
