@@ -22,14 +22,14 @@
 
 //_______________________________________________________________________________________________________________________
 ///
-/// \brief Read 'n' items of size 'size' from file 'fileName', expecting the file size to be exactly n*size
+/// \brief Read 'n' items of size 'size' from file 'filename', expecting the file size to be exactly n*size
 ///
-int ReadData(const char *filename, void *data, size_t size, size_t n)
+int ReadData(const char *filename, void *data, const size_t size, const size_t n)
 {
 	FILE *fd = fopen(filename, "rb");
 	if (fd == NULL)
 	{
-		perror("'fopen' failed");
+		fprintf(stderr, "'fopen()' failed during call of 'ReadData()'.\n");
 		return -1;
 	}
 
@@ -40,14 +40,14 @@ int ReadData(const char *filename, void *data, size_t size, size_t n)
 	// printf("file size: %d\n", filesize);
 	if ((size_t)filesize != n*size)
 	{
-		perror("File size does not match");
+		fprintf(stderr, "'ReadData()' failed: expected file size does not match.\n");
 		return -2;
 	}
 
 	// copy the file into the data array
 	if (fread(data, size, n, fd) != n)
 	{
-		perror("'fread' failed");
+		fprintf(stderr, "'fread()' failed during call of 'ReadData()'.\n");
 		return -3;
 	}
 
@@ -59,23 +59,23 @@ int ReadData(const char *filename, void *data, size_t size, size_t n)
 
 //_______________________________________________________________________________________________________________________
 ///
-/// \brief Write 'n' items of size 'size' to file 'fileName'
+/// \brief Write 'n' items of size 'size' to file 'filename'
 ///
-int WriteData(const char *filename, void *data, size_t size, size_t n, bool append)
+int WriteData(const char *filename, const void *data, const size_t size, const size_t n, const bool append)
 {
 	const char *mode = append ? "ab" : "wb";
 
 	FILE *fd = fopen(filename, mode);
 	if (fd == NULL)
 	{
-		perror("'fopen' failed");
+		fprintf(stderr, "'fopen()' failed during call of 'WriteData()'.\n");
 		return -1;
 	}
 
 	// write data array to file
 	if (fwrite(data, size, n, fd) != n)
 	{
-		perror("'fwrite' failed");
+		fprintf(stderr, "'fwrite()' failed during call of 'WriteData()'.\n");
 		return -3;
 	}
 

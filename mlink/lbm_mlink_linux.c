@@ -1,6 +1,6 @@
 /*
  * This file automatically produced by /usr/applic/packages/mathematica/10.0.0/SystemFiles/Links/MathLink/DeveloperKit/Linux-x86-64/CompilerAdditions/mprep from:
- *	lbm_mlink.tm
+ *	lbm.tm
  * mprep Revision 18 Copyright (c) Wolfram Research, Inc. 1990-2013
  */
 
@@ -25,12 +25,7 @@ MLMessageHandlerObject stdhandler = 0;
 /********************************* end header *********************************/
 
 
-# line 1 "lbm_mlink.tm"
-
-# line 31 "lbm_mlink_linux.c"
-
-
-void MLLatticeBoltzmann P(( float _tp1, int _tp2, float * _tp3, int _tpl3, float * _tp4, int _tpl4, int * _tp5, long _tpl5));
+void LatticeBoltzmann P(( float _tp1, int _tp2, float * _tp3, int _tpl3, float * _tp4, int _tpl4, int * _tp5, long _tpl5));
 
 #if MLPROTOTYPES
 static int _tr0( MLINK mlp)
@@ -54,7 +49,7 @@ static int _tr0(mlp) MLINK mlp;
 	if ( ! MLGetIntegerList( mlp, &_tp5, &_tpl5) ) goto L4;
 	if ( ! MLNewPacket(mlp) ) goto L5;
 
-	MLLatticeBoltzmann(_tp1, _tp2, _tp3, _tpl3, _tp4, _tpl4, _tp5, _tpl5);
+	LatticeBoltzmann(_tp1, _tp2, _tp3, _tpl3, _tp4, _tpl4, _tp5, _tpl5);
 
 	res = 1;
 L5:	MLReleaseInteger32List( mlp, _tp5, _tpl5);
@@ -71,27 +66,27 @@ static struct func {
 	int   (*f_func)P((MLINK));
 	const char  *f_name;
 	} _tramps[1] = {
-		{ 5, 0, _tr0, "MLLatticeBoltzmann" }
+		{ 5, 0, _tr0, "LatticeBoltzmann" }
 		};
 
 static const char* evalstrs[] = {
-	"MLLatticeBoltzmann::usage = \"MLLatticeBoltzmann[omega_Real, nums",
-	"teps_Integer, gravity_List, f0_List, type0_List] runs a Lattice ",
-	"Boltzmann Method (LBM) simulation\"",
+	"LatticeBoltzmann::usage = \"LatticeBoltzmann[omega_Real, numsteps",
+	"_Integer, gravity_List, f0_List, type0_List] runs a Lattice Bolt",
+	"zmann Method (LBM) simulation\"",
 	(const char*)0,
-	"MLLatticeBoltzmann::invalidOmega = \"'omega' parameter must be be",
-	"tween 0 and 2\"",
+	"LatticeBoltzmann::invalidOmega = \"'omega' parameter must be betw",
+	"een 0 and 2\"",
 	(const char*)0,
-	"MLLatticeBoltzmann::invalidDimensionf0 = \"'f0' must be a Real32L",
-	"ist of length 9*dimX*dimY for dimension 2 (D2Q9), and 19*dimX*di",
-	"mY*dimZ for dimension 3 (D3Q19)\"",
+	"LatticeBoltzmann::invalidDimensionf0 = \"'f0' must be a Real32Lis",
+	"t of length 9*dimX*dimY for dimension 2 (D2Q9), and 19*dimX*dimY",
+	"*dimZ for dimension 3 (D3Q19)\"",
 	(const char*)0,
-	"MLLatticeBoltzmann::invalidDimensionType0 = \"'type0' must be an ",
-	"integer list of length dimX*dimY for dimension 2 (D2Q9), and dim",
-	"X*dimY*dimZ for dimension 3 (D3Q19)\"",
+	"LatticeBoltzmann::invalidDimensionType0 = \"'type0' must be an in",
+	"teger list of length dimX*dimY for dimension 2 (D2Q9), and dimX*",
+	"dimY*dimZ for dimension 3 (D3Q19)\"",
 	(const char*)0,
-	"MLLatticeBoltzmann::outOfMemory = \"malloc failed, probably out o",
-	"f memory\"",
+	"LatticeBoltzmann::outOfMemory = \"malloc failed, probably out of ",
+	"memory\"",
 	(const char*)0,
 	(const char*)0
 };
@@ -112,7 +107,7 @@ int MLInstall(mlp) MLINK mlp;
 {
 	int _res;
 	_res = MLConnect(mlp);
-	if (_res) _res = _definepattern(mlp, (char *)"MLLatticeBoltzmann[omega_Real, numsteps_Integer, gravity_List, f0_List, type0_List]", (char *)"{ omega, numsteps, gravity, f0, type0 }", 0);
+	if (_res) _res = _definepattern(mlp, (char *)"LatticeBoltzmann[omega_Real, numsteps_Integer, gravity_List, f0_List, type0_List]", (char *)"{ omega, numsteps, gravity, f0, type0 }", 0);
 	if (_res) _res = _doevalstr( mlp, 0);
 	if (_res) _res = _doevalstr( mlp, 1);
 	if (_res) _res = _doevalstr( mlp, 2);

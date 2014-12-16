@@ -29,7 +29,7 @@
 ///
 /// \brief square function x -> x^2
 ///
-static inline real squaref(real x)
+static inline real squaref(const real x)
 {
 	return x*x;
 }
@@ -39,7 +39,7 @@ static inline real squaref(real x)
 ///
 /// \brief maximum of two numbers
 ///
-static inline real maxf(real x, real y)
+static inline real maxf(const real x, const real y)
 {
 	if (x >= y)
 	{
@@ -55,7 +55,7 @@ static inline real maxf(real x, real y)
 ///
 /// \brief minimum of two numbers
 ///
-static inline real minf(real x, real y)
+static inline real minf(const real x, const real y)
 {
 	if (x <= y)
 	{
@@ -72,9 +72,9 @@ static inline real minf(real x, real y)
 //
 
 
-int ReadData(const char *filename, void *data, size_t size, size_t n);
+int ReadData(const char *filename, void *data, const size_t size, const size_t n);
 
-int WriteData(const char *filename, void *data, size_t size, size_t n, bool append);
+int WriteData(const char *filename, const void *data, const size_t size, const size_t n, const bool append);
 
 
 

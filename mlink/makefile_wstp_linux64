@@ -5,19 +5,19 @@ MATHSYSTEMDIR = /usr/applic/packages/mathematica/10.0.0/SystemFiles
 # set this value with the result of evaluating $SystemID
 SYS = Linux-x86-64
 
-CADDSDIR = ${MATHSYSTEMDIR}/Links/MathLink/DeveloperKit/${SYS}/CompilerAdditions
+CADDSDIR = ${MATHSYSTEMDIR}/Links/WSTP/DeveloperKit/${SYS}/CompilerAdditions
 MATHLDIR = ${MATHSYSTEMDIR}/Libraries/${SYS}
 
-# set these with appropriate libs for your system.
+# set these with appropriate libs for your system
 EXTRALIBS = -lm -lpthread -lrt -ldl -luuid
-MLLIB = ML64i4
+WSLIB = WSTP64i4
 
-MPREP = ${CADDSDIR}/mprep
+WSPREP = ${CADDSDIR}/wsprep
 
 CCOPTS = -Wall -m64 -O3
 
-all: lbm2D.o lbm3D.o util.o lbm_mlink_linux.o lbmML.o
-	${CC} ${CCOPTS} -L${CADDSDIR} -L${MATHLDIR} -l${MLLIB} ${EXTRALIBS} -o ${SYS}/lbmML $?
+all: lbm2D.o lbm3D.o util.o lbm_wstp_linux.o lbmWS.o
+	${CC} ${CCOPTS} -L${CADDSDIR} -L${MATHLDIR} -l${WSLIB} ${EXTRALIBS} -o ${SYS}/lbmWS $?
 
 lbm2D.o: ../src/lbm2D.c
 	${CC} -c -I${CADDSDIR} -I../include ${CCOPTS} $<
@@ -31,8 +31,8 @@ util.o: ../src/util.c
 .c.o:
 	${CC} -c -I${CADDSDIR} -I../include ${CCOPTS} $<
 
-lbm_mlink_linux.c: lbm_mlink.tm
-	${MPREP} -o $@ $?
+lbm_wstp_linux.c: lbm.tm
+	${WSPREP} -o $@ $?
 
 
 clean:

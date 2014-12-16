@@ -3,7 +3,7 @@
 (*** Wolfram CDF File ***)
 (* http://www.wolfram.com/cdf *)
 
-(* CreatedBy='Mathematica 9.0' *)
+(* CreatedBy='Mathematica 10.0' *)
 
 (*************************************************************************)
 (*                                                                       *)
@@ -22,11 +22,11 @@
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[      1063,         20]
-NotebookDataLength[    473194,       8864]
-NotebookOptionsPosition[    469649,       8726]
-NotebookOutlinePosition[    470173,       8748]
-CellTagsIndexPosition[    470086,       8743]
+NotebookDataPosition[      1064,         20]
+NotebookDataLength[    528262,      10040]
+NotebookOptionsPosition[    524683,       9901]
+NotebookOutlinePosition[    525202,       9923]
+CellTagsIndexPosition[    525115,       9918]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -70,16 +70,31 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"lbmML", "=", 
+  RowBox[{"lbmLink", "=", 
    RowBox[{"Install", "[", 
-    RowBox[{"\"\<../mlink/\>\"", "<>", "$SystemID", "<>", "\"\</lbmML\>\""}], 
+    RowBox[{"\"\<../mlink/\>\"", "<>", "$SystemID", "<>", "\"\</lbmWS\>\""}], 
     "]"}]}], ";"}]], "Input",
  CellChangeTimes->{{3.5609403639740033`*^9, 3.5609403707653913`*^9}, 
    3.5609404328489428`*^9, {3.560947339958007*^9, 3.560947349225537*^9}, {
    3.5621818652377615`*^9, 3.562181881900715*^9}, {3.5637761199589214`*^9, 
-   3.563776120422948*^9}, {3.569140921629541*^9, 3.5691409326511717`*^9}, {
-   3.570571772574874*^9, 3.570571819510558*^9}, {3.612774770453443*^9, 
-   3.6127747732746043`*^9}}],
+   3.563776120422948*^9}, {3.569140921629541*^9, 3.5691409326511717`*^9}, 
+   3.627672652932806*^9, {3.627674231168076*^9, 3.627674231254081*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{
+   "to", " ", "use", " ", "the", " ", "traditional", " ", "MathLink", " ", 
+    "interface"}], ",", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"call", "\[IndentingNewLine]", "lbmLink"}], "=", 
+     RowBox[{"Install", "[", 
+      RowBox[{
+      "\"\<../mlink/\>\"", "<>", "$SystemID", "<>", "\"\</lbmML\>\""}], 
+      "]"}]}], ";"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.627674233933234*^9, 3.6276742654470367`*^9}, {
+  3.6276742983529186`*^9, 3.62767430781546*^9}}],
 
 Cell[CellGroupData[{
 
@@ -162,7 +177,7 @@ Cell[BoxData[
    3.6134716061635065`*^9, 3.6134965576522684`*^9, 3.6135911918267317`*^9, 
    3.613591545699972*^9, 3.6136267175203795`*^9, 3.61365037867772*^9, 
    3.6136520837952476`*^9, 3.6136641506544323`*^9, 3.6139109437455378`*^9, 
-   3.614532439563388*^9, 3.616175608332883*^9}]
+   3.614532439563388*^9, 3.616175608332883*^9, 3.6276747344928646`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -205,7 +220,7 @@ Cell[BoxData[
    3.6134716061845083`*^9, 3.6134965576732693`*^9, 3.613591191846733*^9, 
    3.613591545718973*^9, 3.613626717539381*^9, 3.6136503787007217`*^9, 
    3.613652083825249*^9, 3.613664150679434*^9, 3.6139109437665386`*^9, 
-   3.614532439587389*^9, 3.616175608349885*^9}],
+   3.614532439587389*^9, 3.616175608349885*^9, 3.6276747360339527`*^9}],
 
 Cell[BoxData["1"], "Output",
  CellChangeTimes->{{3.6128509727122097`*^9, 3.612850982411765*^9}, 
@@ -213,7 +228,7 @@ Cell[BoxData["1"], "Output",
    3.6134716061845083`*^9, 3.6134965576732693`*^9, 3.613591191846733*^9, 
    3.613591545718973*^9, 3.613626717539381*^9, 3.6136503787007217`*^9, 
    3.613652083825249*^9, 3.613664150679434*^9, 3.6139109437665386`*^9, 
-   3.614532439587389*^9, 3.6161756083518853`*^9}]
+   3.614532439587389*^9, 3.616175608349885*^9, 3.627674736036953*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -401,7 +416,8 @@ Cell[BoxData["\[Rho]"], "Output",
    3.6128643429609447`*^9, 3.6134716062305107`*^9, 3.613496557722272*^9, 
    3.613591191896736*^9, 3.613591545760976*^9, 3.6136267175873833`*^9, 
    3.6136503787487245`*^9, 3.6136520838792524`*^9, 3.613664150730437*^9, 
-   3.613910943814542*^9, 3.614532439638392*^9, 3.61617560838939*^9}]
+   3.613910943814542*^9, 3.614532439638392*^9, 3.61617560838939*^9, 
+   3.627674741337256*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -440,7 +456,8 @@ Cell[BoxData[
    3.612864343021948*^9, 3.6134716062945147`*^9, 3.613496557846279*^9, 
    3.613591191954739*^9, 3.6135915458189793`*^9, 3.6136267177113905`*^9, 
    3.6136503788067274`*^9, 3.613652083899254*^9, 3.61366415078944*^9, 
-   3.6139109438775454`*^9, 3.6145324397013955`*^9, 3.6161756085564113`*^9}]
+   3.6139109438775454`*^9, 3.6145324397013955`*^9, 3.6161756085564113`*^9, 
+   3.6276747421103*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -671,7 +688,7 @@ Cell[BoxData[
    3.6134716124578667`*^9, 3.613496557926284*^9, 3.613591192034744*^9, 
    3.6135915458979836`*^9, 3.613626717788395*^9, 3.613650378881732*^9, 
    3.6136520839722576`*^9, 3.6136641508714447`*^9, 3.6139109439655504`*^9, 
-   3.6145324397804003`*^9, 3.616175608634921*^9}]
+   3.6145324397804003`*^9, 3.616175608634921*^9, 3.627674747655617*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -758,7 +775,7 @@ Cell[BoxData[
    3.6134716131939087`*^9, 3.613496557947285*^9, 3.613591192053745*^9, 
    3.613591545917985*^9, 3.613626717806396*^9, 3.613650378900733*^9, 
    3.6136520839912586`*^9, 3.613664150892446*^9, 3.6139109439885516`*^9, 
-   3.6145324397994013`*^9, 3.6161756086544237`*^9}]
+   3.6145324397994013`*^9, 3.6161756086544237`*^9, 3.6276747516728473`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -806,6 +823,12 @@ syb2z5rYP2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a1LV/wnPuv97/97v
   Frame->False,
   FrameLabel->{None, None},
   FrameTicks->{{None, None}, {None, None}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> Automatic, 
+    "DefaultPlotStyle" -> Automatic, "DomainPadding" -> Scaled[0.02], 
+    "RangePadding" -> Scaled[0.05]},
   PlotLabel->None]], "Output",
  CellChangeTimes->{
   3.612850489274559*^9, {3.6128505316289816`*^9, 3.612850607666331*^9}, {
@@ -815,7 +838,8 @@ syb2z5rYP2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a1LV/wnPuv97/97v
    3.6128643432039585`*^9, 3.6134716165941033`*^9, 3.61349655803229*^9, 
    3.6135911921157484`*^9, 3.6135915459819884`*^9, 3.613626717891401*^9, 
    3.613650378964737*^9, 3.6136520840232606`*^9, 3.61366415095945*^9, 
-   3.6139109440725565`*^9, 3.6145324398694053`*^9, 3.6161756087304335`*^9}]
+   3.6139109440725565`*^9, 3.6145324398694053`*^9, 3.6161756087304335`*^9, 
+   3.62767475294092*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -869,7 +893,7 @@ Cell[BoxData[
   3.613471619564273*^9, 3.613496558090293*^9, 3.6135911921707516`*^9, 
   3.613591546038992*^9, 3.613626717945404*^9, 3.61365037902174*^9, 
   3.613652084081264*^9, 3.6136641510204535`*^9, 3.6139109441275597`*^9, 
-  3.614532439919408*^9, 3.61617560878144*^9}]
+  3.614532439919408*^9, 3.61617560878144*^9, 3.627674756653132*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -950,8 +974,8 @@ Cell[BoxData[
    3.6136539846459703`*^9, 3.613654000288865*^9}}],
 
 Cell[BoxData[
- TemplateBox[{GraphicsBox[{
-     GraphicsComplexBox[CompressedData["
+ TemplateBox[{GraphicsBox[
+    GraphicsComplexBox[CompressedData["
 1:eJyF2TuK3EAQBuDF0YQTTDDBBLIQQgghJLXer90z+AgGx766j2BjtgN/IDwY
 is9s9tPdVaWv339++/Hl7c/vy99///n9euc/Pv7lDd/xAz/xCyc4xRnOcYFL
 XOEaN7jFHQ64xwMe8YRnvOAVb3jHBz7x+6fNOdr6xt/f8B0/8BO/cIJTnOEc
@@ -972,11 +996,11 @@ Z3Hudg6zL7dP8932Hvdcm3N5UStc4wa3uMMB93jAI57wjBe84g3v+MAnjvn7
 XczvJO7N3aO6V3PP4tztHGZfbp/mu+097rk25+qi1rjBLe5wwD0e8IgnPOMF
 r3jDOz7wiWP+fgf1u5jfSdybu0d1r+aexbnbOcy+3D7Nd9t73HNtzvVFbXCL
 Oxxwjwc84gnPeMEr3vCOD3zi94/fXFqmjw==
-      "], {{
+     "], {{{
+        EdgeForm[], 
         GrayLevel[0.8], 
-        EdgeForm[None], 
-        GraphicsGroupBox[
-         PolygonBox[CompressedData["
+        GraphicsGroupBox[{
+          PolygonBox[CompressedData["
 1:eJxNmge4j+Ufxp9HiiRbmZW9I8leZZzsETJTSPaxyqY62TtkFArZJHtWtnBE
 kswUZbZQZPz7P/f1/bzX71xX9/V+x/0d7/PcLwflahffuEcy59y8B5wL/7nc
 Ac8HvICtXC5nuWTEZOcJSE5OcR+QP6BAQAoX6yXeQ+RSYD8YkA87H7m8xJNT
@@ -1063,167 +1087,317 @@ j2niFL03k9tCz0T6SidnvWlE+IrYIWZ+w/MPbH1rS9lP+57xpsu/OOs/iW1j
 6U0ftwJuc3fKXYd7lLrrcL8jfpP7OsadHecOT9DjNj2PJ8nfIvc9darX76P6
 2awbtar7N+C+t/9PQO94J+Au73USX/Ym+p0gdpLav9j3W/yTcE5Td5d7PMuM
 M8w7y1P+Pfh3se8RP80dnaPH/wGiUXyS
-          "]]]}, {}, {}, {}, {}}, VertexColors -> CompressedData["
+           "]]}]}, {}, {}, {}, {}}}, VertexColors -> CompressedData["
 1:eJzt0yEKAlEUQFHRJQgWLVotVkH4SWwGQbAJglEEs6jdOOAWBINpyizAMNli
 tVlkklWcTQijnBf+gxM/9zVny9G8XMonfyr5SvadfhI/wm1wPK8Pz5BOFu/p
 Kwucc84555xzzv/DW9m4Xd1cwmp3qncb214tTu/R8Fo4L9q/8d/yovXsLrj+
 9c/1r3+uf/1z/euf61//XP/65+5C55xzzjnn3/APjkr+kg==
-       "]], {}}, AspectRatio -> 1, Frame -> True, FrameLabel -> {
-      FormBox["\"x\"", TraditionalForm], 
-      FormBox["\"y\"", TraditionalForm]}, Method -> {}, 
-    PlotRange -> {{0., 15.}, {0., 31.}}, PlotRangeClipping -> True, 
-    PlotRangePadding -> {
-      Scaled[0.02], 
-      Scaled[0.02]}],TemplateBox[{
-     StyleBox[
-      StyleBox[
-       PaneBox[
-        GraphicsBox[{
-          RasterBox[CompressedData["
-1:eJxF0jloVFEUxvGJZerYRuxiba2nTNqkTiWopRGsYmvaJIVNLARJQAQZDCpG
-UUkcs2+zv9nn7ftiM9bOu/MHLwyz3XPO9zsztx88WXp4o1AonI4fU4X/5/lM
-cd5YfSaT5xeyN7sWLe6t8/6lvNpSh89fS7yYv3rD9zsyrW2v3Jt+y713cmd5
-49do7j33i7Iz/lbb/kDdrtxV5yP1n6Q0mhtXfKbPF1maFNLvqxir+cVv9P0u
-T/N2Kz/o/1Mmin3m7MuCKjhg3oHkVeNS5pZEjdFKzP8tt/I2s4fkOJTHj/Jz
-RJ5jyW/NFI/JdSJ/82ujE/Kdyn118YycZ6LarZ2T90IuL9Qh96XcVA2vyH8l
-6tryNY4yc8p4yswr46owt4Kvwvwqzio5qnhr5KnhrpGrjr9Ovjp7aJCzwT4a
-5G2ylya5m+xHI7/GnjQcLRwtHC0cLRxtHG0cbRwd2VSODo4Oji6OLo4ujh6O
-Ho4ejj6OPo4+jgGOAY4BjiGOIY4hDp05Oh6deTounbk6Pp35Bk6DHAZegzwG
-boNcJn6TfCa/p0lOk32Y5LXYi0Vui/1Y5LfYk4XDxmHjsHHYOGwcNg4bh4PD
-weHgcHA4OBwcLg4Xh4vDxeHicHF4ODwcHg4Ph4fDw+Hj8HH4OHwcPg4fh48j
-wBHgCHAEOAIcAY4QR4gj5H8Z4ghxhDgiHBGOCEeEI8IR4YhxxDhiHDGOGEeM
-I8aR4EhwJDgSHAmOBEeKI8WR4khxpDhSHBmODEeGI8OR4chw/JF/3eEbIw==
-
-           "], {{
-             Rational[-15, 2], 
-             Rational[-225, 2]}, {
-             Rational[15, 2], 
-             Rational[225, 2]}}, 
-           ColorFunction -> (ColorData["DeepSeaColors"][1 - #]& )], 
-          StyleBox[{}, Antialiasing -> False], 
-          StyleBox[
-           StyleBox[{{
-              GrayLevel[0], 
-              AbsoluteThickness[0.2], 
-              Opacity[0.3], 
-              LineBox[{{7.5, -112.5}, {7.5, 112.5}}]}, {{{
-                GrayLevel[0.4], 
-                AbsoluteThickness[0.2], 
-                LineBox[{{{7.5, -112.5}, 
-                   Offset[{4., 0}, {7.5, -112.5}]}, {{7.5, -75.}, 
-                   Offset[{4., 0}, {7.5, -75.}]}, {{7.5, -37.5}, 
-                   Offset[{4., 0}, {7.5, -37.5}]}, {{7.5, 0.}, 
-                   Offset[{4., 0}, {7.5, 0.}]}, {{7.5, 37.5}, 
-                   Offset[{4., 0}, {7.5, 37.5}]}, {{7.5, 75.}, 
-                   Offset[{4., 0}, {7.5, 75.}]}, {{7.5, 112.5}, 
-                   Offset[{4., 0}, {7.5, 112.5}]}}]}, {
-                GrayLevel[0.4], 
+      "]], {
+    DisplayFunction -> Identity, AspectRatio -> 1, DisplayFunction :> 
+     Identity, Frame -> True, FrameLabel -> {{
+        FormBox["\"y\"", TraditionalForm], None}, {
+        FormBox["\"x\"", TraditionalForm], None}}, 
+     FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+     GridLinesStyle -> Directive[
+       GrayLevel[0.5, 0.4]], 
+     Method -> {
+      "DefaultBoundaryStyle" -> Automatic, "DefaultColorFunction" -> 
+       "M10DefaultDensityGradient"}, PlotRange -> {{0., 15.}, {0., 31.}}, 
+     PlotRangeClipping -> True, PlotRangePadding -> {
+       Scaled[0.02], 
+       Scaled[0.02]}, Ticks -> {Automatic, Automatic}}],FormBox[
+    FormBox[
+     TemplateBox[{
+       FormBox[
+        StyleBox[
+         StyleBox[
+          PaneBox[
+           GraphicsBox[{
+             RasterBox[CompressedData["
+1:eJw1Vwk01d3bRZEhpZQikaI5QxMK21hpMEXelCFTRZOhvDIkSkpJpogyVOak
+SVESyhTuhGse7sB173V/EUVv5e9r9Z21zlpnnXXWc56z936Go+J61sZjlpCQ
+UP3MFJ6Z/7cujdY0K33JQfvunKLgpBHU/3P6t/MEgUYtgWGwOwerd1yXOec9
+gjkkcedNowT66QV6WMSB/0ZvXzfDEZiaPar4wScwFnJSR+TjEKqUDrQcWjyC
+8LdYUcchIKa6ZusnvyHILNDYvpfLR4VWV1gii4B8A0sjatUQHGctSNav4ONX
+zoUB134CG89lbdhHG0TBxNiUZgIfO5UWGmt2EzCUc1kzL2IQU0MtR1RP8vFv
+wpOsX3QCB98tX0XZPIjdnSXlSwz4KJE0n/WZRsDTtUspgcFGYmOyspQsH+Nh
+LLdkEoGL4ikK9nFsMN5fvPx7iAet75c+enwmcLPokJyCMRuaz44yR9/xcPb0
+MrUttQQybBct7BllIfShgRn7Dg+FzJKrQtUEXv2gSGdkstCUuCKn3ZMH7mGb
+wab3BGoybku4WbOgECUi0biTh7XkkV2pZQS6dx0QXS3MwsmLLK8KGR48dl3P
+OVFCQMCXFB4uZuL1qZrG52wuHr5TFd/+nIBIfN3PAhcmRJ1z1bPLuBjY/OHE
+rCICi3UjJ8/IMGFjfSM25TYXSnlH6sl5BNb2mYxrfWAgw+TU2E13Lo4qf1/3
+4DEBvavCX8bPMiDYZmEbpstFSmLcDe9MApYbKnivlRnQW6tZ4jePC7qUOk/n
+PgFXSvDQRdIAbigsXHqcOYzF4fX7xFIIXAjYwdS/NID2ueOBDm+GYTPpXkhL
+IBC1fLJXSGMAq6dbuw7cGkbsGSHpzFgCadWvOqt7++E/+lrfyHUYzazU02du
+Enh60q8tMqYflcyU9K3aw5A6ot28M4pA1XwtqrlBP+a3BQmvnTsMcwpVXeIK
+gQLvnlT57j441jm6LRvgIHL3mdttlwhQX/8Tn76zDwVl+DSvhIOP5RJfHgYR
+mJzVckMttRdThSprRKI5ENn62MongICSlWV4wY8e7E6fdX3CmQPkGz4z8CNg
+mtYQqOXQg4Q7bC5nKwchK7oXzD1LwJtj5vO6tBuMiNr93RIclCUF+HZ4EYjb
+WnlCX74bmhfyiki9Q5icK0vL9iTwJkzPpfrfLoSeiJapfjGE7RFFW/xdCTAa
+X9ubt3eiyeG0b0nUEPymzBOMnAiIym+xJGl3QuGAZUue4xCenWWPz3MgoOlR
+tMvubgdOQmv7/c1DINhhdt12BGyerTPo+taOEi3Z5Ng5Q9h4VLEkz5pA8K9H
+244dasds1YmpiO5BeFFfywUcIJBuvmLT0Cs6rOXoRwKeDSJnz8EAU3MC9Ymp
+qqcX05EhXlruFTkI9nsBfYEZgS8Dcopf/dsg+HFP2enIIFZtu6HTZ0hATj1O
+NrClFXojwZetNQfhUqCWUqhHQP+itNT0llbc6HNimooO4oFK5VSgDgG3miiR
+q/EtaKcYmul0stF996jD7q0Ebiyc/UPyKw1qH1fmbHjKhvy8ybJFmgSKnS6N
+xtrQ4FcyW0L5Chv2V+KXMTYQoOf/4Mg9p6Iyd9Br4WE2En6oBz9dQ+DXt/P9
+aQuomJ9a1yiqzgb1XEN38CoCj1IuKkOECod4uyKT7yycij5yL3EugX16l5wG
+xijIjmbcvvyBBbFsvn3RhABjvRH3I5gUjEWc9am4zkLGh5DFtb0CpFyO6lZr
+oUA/+KfNLxsWdnTNo/XVCmCoemtZ3UcKovyvb92pyELLRHrsZLEAQzV3HLxe
+UdBySk4ukM3EGRktiwX3BIg5mZQyN5sCZY+H30uKmBDfUCW1PkKAbXNT24uS
+KPBy1OwYD2Aiy+xgvfEpAXqK0pdYX6PgjV152WYjJvRdWJFH7ASIsH506GsA
+BSIWe9POSTLRdvG8qb+BABvGcxMTT1BgsYseUkRjwCdRTOTWGgEoSU9atA9T
+kGzg7sxPY0Cy+G7FYxkBAnWfy3aaU8DePmq43pOBxw1rQ95PjUC5u8QmeAcF
+GhqhK09oMGDALt1BZ4ygNvTtHaUNFASvkZqdPTmAjum9k8TnEZxW+UD+sIyC
+GuVkNrNyAL4K3a/EX41g8ceP893mUiC7VK1WJXoA0ttO+6k8GMFbz3oL0V9k
+OMo8z3W2HUC25W/NHddG4CbRfCtnhIx8cdy4v3wARl63BTbnRiBZSG007yVj
+XKjRu2uwH51XVhR6Hx7BMwu6FL+ZDKOpfw7IF/fjfPqzk1eMR/DPaNfemAoy
+bo6y1e0DZ/JHmfGa+xtGMB3ff12zmIz2YV+ZRON+5LXQWK8WjSB7O7uOmkHG
+Ksb0KFWqHyaEe1bzLz4OdAzPOX+HjJ6X8jkq+X3okfjmPDQ4UzeCBLuWhJPh
+/3iL1329PgSoXlsuROYjVenr1VJfMqSSDmySJ/ViAZZ2LS3lw7jy+8cjbmRk
+RR7/knCsFwWH85K1svgYdvs56/dBMnQCLr+QGe+Bmf+OQ3uj+YgVEzbJMCWD
+fDz1ws3IHvTFfJZ18+dDO0803HgbGZ7/vNIVl+9BYN5RSpAjH737JCtZamT8
+2kP6GVHQDdmPIzEJu/i4KpgndE2OjATd4Ypp/W486Q3d/0SDj013ZLFuDhnq
+62dFBJG7sGdqvmTNUj6yj2v+TCJIqFJYvuu7axcGZDNre4X5mCjUvdhFJuGo
+lLaE30QngtU3X/3O5cFkzHhS+TkJX/6zahRc68Ri82pjmRYe7mjvv+AeT8J1
+vtdtL4VOFLvZCq0r56Ev2G48158EpZ4rNoOFHTAPZZcbZfOgXuXkO2JHwuum
+B4td0QFW8oUgh9s8BM058UVLm4R979+091DaEfJijq7fvzw07Pc5c2EpCewi
+auph93YsbU7+Fn2MhyVxF/llU80ITOc7tX6j4xln3ctHe3nwpEd4TXc2QzZW
+bKX1dTr2z3rrU76FhxeKtzgm75qRE7aC3biMDvby/RptijyIuCZ5Rt1vhqHP
+jtw9RW0I0+nhC0R5sMpJZzWGNoN+zNb7o2EbFA6eyZ9DcPGAn+u6wKUZZ2zO
+qBvSWvHy9PTxFe1c8LWe99sZNUPUJGr0rUcrLKJi1XQrudgR8Nbp3spmpG3J
+eqk92QJOlgrTOp+LEJ/YJ2VWzaCofoqqzmjBlHNirtcVLj54e/zsnLl3jhzn
+qKV5CySXS5yJcOJCxHPHvv8Km6E3R0qra5SGZZ3BW9J0uNjlMv/esq5m+E5u
+Ej1+j4aNd79MvlzIRZQDi7NTgoScYauOMWMa9G3d3zfxh/HZtlT76AzOPZ1+
+T0J5VFgsaI8YrBnGPMuYyGAPEhY2Jl2WTKDCpXmf+XTGMKzN3VrTZvjdXV5q
+l6RHxbnoinlLg4aRYKKjWl5JQkhR97qVbArC92xp0bQbRpu+tF/PjK6ep0//
+enKLgnjRnBRzjWFIK472/55HBid2JVV3OwWPqhScXSWGoZ5yRHz+ajKWh5tl
+f5qJ+1eXYlSDmBxYydVoKOuTYeN34qL1NTJq9ES48eUc+MRr2mvYkhHlHm3R
+o0EGfer808K7HMTJpIbCm4yLBUfNqMUkcEqG/T/5cPDilmi25Uz8cm9ljQwL
+k/DDz3FH7z4OWiXPNTmnkGF7jpMofLAZUlqU6W9qHHy71jl+diZvvLdRN5B/
+1ARFgemn+UIcLBU1UwyrJWP9Nv9BzYlGbCp4c2Nt5xB0w5+axM74nbCkLGbP
+rkYYnNhoZfRyCA7T8t4ZE2QI/Zje7nL3MyzVMhY7xAwhOPhKXPFMnvTqNusL
+4DTAhSHb5XtiCPenBKUfVs3UkffR127rNsAn/VpGtPEQKi4cHiDP5GfDTIpG
+zo16hB/9z+OR4hD6v1aLD1hTkB+xpP19Vx0S5M9uKP82CGEfdc3Rmbog5+kY
+1raxDo/bGF9ayTP1XJBsLxxGQdieh2sFIbUoiT9UIsgfhKn3rEsL7lLAWz9M
+FiXVoNaqIWjO1UF4ck5nqxRRcEhaI3D5ihq0SxsYrXAexDWP9iatTxR8IPxV
+tvl8wnDDMzFd3UHkMYwnjLop2EAtq99f9RE/rqk1WssOosH5iaLNVwqSXgr5
+ust+hJRZyh2vETZ43UtMXSWpEL67SyHYvRqKItL2EbVsSDuEe/uqUHEq8GZV
+/KsqbKoIU0zLZEOdzo8L16Gi7QjVq0CsCgbB4wMvg9iwsrUvi7OkwshgqWy1
+fSUsdU/kNNmx4UOpHMjypKJwhdPbztwPcPnWdWpQg404i40SL0KoUBfbU8v6
+WgGfF5abpyXYePk5SbN6Rvczn4cli5LeI/xc9fclLBZa9wj/Qyugov228wkT
+nXLEb9Iu13zPwrdP3peYVVS8tuW98e18i8fc/HDzZBaWmrRlf+2g4qZ8gERW
+cBlKcpT2uPqyoPvBsHnWKBWuvSIOFKVS1LnHSQftZ8FBv2BCVpwGnYcx+UKV
+r9GhIkaLX81CcNni5arKNEifUPhPw60E3N7A5EIhFu5rh5lu3U4Dc2P2PmfR
+V/gvdcTxUycTFS+53qYHaHgzqpUWk/MCcw8fW9X7kol+Lbt4W3caYkrK+eXm
+z7FcrpXzLYYJkacVZe5BNLgFmeuP8IqhTttTNP8kE6s2rmf4x9HgG5a/TFfx
+KRD7zm+tCROpSVa5ph40cG21zL8EF4ExMs2bWMCErHDAmUU6M3bWvbmQ0/ME
+V/aZuFf3M3DD+/5WliQNXb8MHjkZPMGavMju2KcMiLRV/3jRQ4Ut9RNlcXoh
+GsQabJ1CGbhoyP0QUUxFY/b+6cbpApxyl27acICBsXyZawcjqDALom284lIA
+mSors6llDHgt1j6w6hAV5ZYODjsr8/FcOaG8hjsAxiVH2a9rqdiuOnBtTCUf
+diH0bQmlA3DgRnRU/UdB0eTxV3nheZjsVCg6FjUAqm1+elwzBaubBAwXZi7u
+6Tit1rAfwN4KsodrJgXpmedllprmQj8p88FPtQFUrfu+YbM/BUsu/NQnPcqZ
+iUOWXMN4P3YkLB8T3k1B7N4I70jRHIRbr719t7ofz3+bvKHIUyCuLJmi75kN
+tafeczzi+rH+pFdoJp+My19ja8ZrHqNu7tNLm4/1I5MWa+oz089M1S4ZL1jz
+GN5eY9+nNfqhYPBa0iiOjPNpD1Tcoh5BKda7/96vPsTl9pBlPMgQnFOzVBh+
+CLd9Y+RtqX2QlJ19t197pn8wKwymmD9ErlhgJVmnD+Eh6x2LJcnok9+SH5Wf
+BUHl9DPvtl6MkzJ3Cb0lwV5QSodUFraERGaJ+feC9UhATXchgVxlKPrdOxP/
+6kjHZy7oRUvgTmeIkbDnbu3mosYMvP8aH6H3tAfVFlG83oJmVHpbuHhsysDs
+pwr+9P09eLGqNSDUuvmvrtJh7pXp7svtxsNJldlK35v+6uc+YtTW2klHdSOu
+6UxseVrTX52koaW/yCxXrRvhWW8VHY2b/uohFQpp27abVHfBN0A87+dQ41/e
+78HZ/t3qXpcuuO6325Z2q/Evv8l4tNBkSeDvTtioZFXu3NL4l8e74DbVz1mU
+1gnjb4IDXe2f//KVBI3rVpNFup3Q+ryz82Lo57+8JOK8KZ1jTu+ASkaUp4Lq
+Z3D/4B+PsmnHDpZ/Bxacbx0rrW9A1x+c4yD0llV/aWEHhPeuvHT4bAMa/+B5
+B2YXvMsUitvxRems1NSiBpT/wS0WN7TG8l8daJ/R19u7yWX1OPIHn1sg8/9N
+teLRQa4TV9VxqYf+HxyiIZc7Hc2LouPDfbtiumg9lP+8NwpH3CKDI1fTUeyb
+pRdQUAehP++KRIaS9GmVj23I2k3UyVnXYeyP/xHgdMQ7vjvWhjhFPbuSb7Vo
++ePnZagnKljYT7fi8mjUgF1aLbz/+BMCP6tMg7G0VvjUtJ6eMKqF+p97/0Wp
+1FqNWztacSx15Y+EoZq/9v3wu6ZIeW17C6zPnY3ceqvmr53TMA3fJlN9vgWG
+Zu8Wtmz+//NuuK7/TshJtgWaChLpfu2f/u4fBGnSeHSymIYVhN0G2dBPEPo7
+Fr2sH4i3oOF/y3WQWw==
+              "], {{
+                Rational[-15, 2], 
+                Rational[-225, 2]}, {
+                Rational[15, 2], 
+                Rational[225, 2]}}], {Antialiasing -> False, 
+              AbsoluteThickness[0.1], 
+              Directive[
+               Opacity[0.3], 
+               GrayLevel[0]], 
+              LineBox[
+               NCache[{{
+                  Rational[15, 2], 
+                  Rational[-225, 2]}, {
+                  Rational[-15, 2], 
+                  Rational[-225, 2]}, {
+                  Rational[-15, 2], 
+                  Rational[225, 2]}, {
+                  Rational[15, 2], 
+                  Rational[225, 2]}}, {{7.5, -112.5}, {-7.5, -112.5}, {-7.5, 
+                112.5}, {7.5, 112.5}}]]}, {
+              CapForm[None], {}}, {Antialiasing -> False, 
+              StyleBox[
+               LineBox[{{7.5, -112.5}, {7.5, 112.5}}], 
+               Directive[
                 AbsoluteThickness[0.2], 
                 Opacity[0.3], 
-                LineBox[{{{7.5, -105.}, 
-                   Offset[{2.5, 0.}, {7.5, -105.}]}, {{7.5, -97.5}, 
-                   Offset[{2.5, 0.}, {7.5, -97.5}]}, {{7.5, -90.}, 
-                   Offset[{2.5, 0.}, {7.5, -90.}]}, {{7.5, -82.5}, 
-                   Offset[{2.5, 0.}, {7.5, -82.5}]}, {{7.5, -67.5}, 
-                   Offset[{2.5, 0.}, {7.5, -67.5}]}, {{7.5, -60.}, 
-                   Offset[{2.5, 0.}, {7.5, -60.}]}, {{7.5, -52.5}, 
-                   Offset[{2.5, 0.}, {7.5, -52.5}]}, {{7.5, -45.}, 
-                   Offset[{2.5, 0.}, {7.5, -45.}]}, {{
-                   7.5, -29.99999999999999}, 
-                   Offset[{2.5, 0.}, {7.5, -29.99999999999999}]}, {{
-                   7.5, -22.5}, 
-                   Offset[{2.5, 0.}, {7.5, -22.5}]}, {{7.5, -15.}, 
-                   Offset[{2.5, 0.}, {7.5, -15.}]}, {{7.5, -7.5}, 
-                   Offset[{2.5, 0.}, {7.5, -7.5}]}, {{7.5, 7.5}, 
-                   Offset[{2.5, 0.}, {7.5, 7.5}]}, {{7.5, 15.}, 
-                   Offset[{2.5, 0.}, {7.5, 15.}]}, {{7.5, 22.5}, 
-                   Offset[{2.5, 0.}, {7.5, 22.5}]}, {{7.5, 30.}, 
-                   Offset[{2.5, 0.}, {7.5, 30.}]}, {{7.5, 45.}, 
-                   Offset[{2.5, 0.}, {7.5, 45.}]}, {{7.5, 
-                   52.500000000000014`}, 
-                   Offset[{2.5, 0.}, {7.5, 52.500000000000014`}]}, {{7.5, 
-                   60.}, 
-                   Offset[{2.5, 0.}, {7.5, 60.}]}, {{7.5, 67.5}, 
-                   Offset[{2.5, 0.}, {7.5, 67.5}]}, {{7.5, 82.5}, 
-                   Offset[{2.5, 0.}, {7.5, 82.5}]}, {{7.5, 90.}, 
-                   Offset[{2.5, 0.}, {7.5, 90.}]}, {{7.5, 97.5}, 
-                   Offset[{2.5, 0.}, {7.5, 97.5}]}, {{7.5, 105.}, 
-                   Offset[{2.5, 0.}, {7.5, 105.}]}}]}}, {
-               GrayLevel[0.3], 
-               DynamicBox[
-                Directive[
-                 CurrentValue[{GraphicsBoxOptions, LabelStyle}]], 
-                ImageSizeCache -> {{
-                 4.503599627370496*^15, -4.503599627370496*^15}, {
-                 4.503599627370496*^15, -4.503599627370496*^15}}], {{
-                 GrayLevel[0.3], 
-                 InsetBox["0", 
-                  Offset[{7., 0.}, {7.5, -112.5}], {-1, 0.}, Automatic, {1, 
-                  0}], 
-                 InsetBox[
-                  TagBox[
-                   InterpretationBox["\"0.25\"", 0.25, AutoDelete -> True], 
-                   NumberForm[#, {
-                    DirectedInfinity[1], 2}]& ], 
-                  Offset[{7., 0.}, {7.5, -75.}], {-1, 0.}, Automatic, {1, 0}], 
-                 InsetBox[
-                  TagBox[
-                   InterpretationBox["\"0.50\"", 0.5, AutoDelete -> True], 
-                   NumberForm[#, {
-                    DirectedInfinity[1], 2}]& ], 
-                  Offset[{7., 0.}, {7.5, -37.5}], {-1, 0.}, Automatic, {1, 
-                  0}], 
-                 InsetBox[
-                  TagBox[
-                   InterpretationBox["\"0.75\"", 0.75, AutoDelete -> True], 
-                   NumberForm[#, {
-                    DirectedInfinity[1], 2}]& ], 
-                  Offset[{7., 0.}, {7.5, 0.}], {-1, 0.}, Automatic, {1, 0}], 
-                 InsetBox[
-                  TagBox[
-                   InterpretationBox["\"1.00\"", 1., AutoDelete -> True], 
-                   NumberForm[#, {
-                    DirectedInfinity[1], 2}]& ], 
-                  Offset[{7., 0.}, {7.5, 37.5}], {-1, 0.}, Automatic, {1, 0}], 
-                 InsetBox[
-                  TagBox[
-                   InterpretationBox["\"1.25\"", 1.25, AutoDelete -> True], 
-                   NumberForm[#, {
-                    DirectedInfinity[1], 2}]& ], 
-                  Offset[{7., 0.}, {7.5, 75.}], {-1, 0.}, Automatic, {1, 0}], 
-                 InsetBox[
-                  TagBox[
-                   InterpretationBox["\"1.50\"", 1.5, AutoDelete -> True], 
-                   NumberForm[#, {
-                    DirectedInfinity[1], 2}]& ], 
-                  Offset[{7., 0.}, {7.5, 112.5}], {-1, 0.}, Automatic, {1, 
-                  0}]}, {
-                 GrayLevel[
-                 0.3], {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
-{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}}, {}}}}, Antialiasing -> False], 
-           "GraphicsAxes", StripOnInput -> False]}, AspectRatio -> Automatic, 
-         Frame -> True, FrameStyle -> Directive[
-           Opacity[0.3], 
-           GrayLevel[0]], FrameTicks -> False, ImageSize -> {Automatic, 225}, 
-         PlotRange -> All, PlotRangePadding -> None], Alignment -> Left, 
-        AppearanceElements -> None, ImageMargins -> {{5, 5}, {5, 5}}, 
-        ImageSizeAction -> "ResizeToFit"], StripOnInput -> False, LineIndent -> 
-       0], StripOnInput -> False, FontFamily -> "Times", Background -> 
-      Automatic]}, "BarLegend", DisplayFunction -> (#& ), 
-    InterpretationFunction :> (RowBox[{"BarLegend", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           RowBox[{
+                GrayLevel[0]], StripOnInput -> False], 
+              StyleBox[
+               StyleBox[{{
+                  StyleBox[
+                   LineBox[{{{7.5, -112.5}, 
+                    Offset[{4., 0}, {7.5, -112.5}]}, {{7.5, -75.}, 
+                    Offset[{4., 0}, {7.5, -75.}]}, {{7.5, -37.5}, 
+                    Offset[{4., 0}, {7.5, -37.5}]}, {{7.5, 0.}, 
+                    Offset[{4., 0}, {7.5, 0.}]}, {{7.5, 37.5}, 
+                    Offset[{4., 0}, {7.5, 37.5}]}, {{7.5, 75.}, 
+                    Offset[{4., 0}, {7.5, 75.}]}, {{7.5, 112.5}, 
+                    Offset[{4., 0}, {7.5, 112.5}]}}], 
+                   Directive[
+                    AbsoluteThickness[0.2], 
+                    GrayLevel[0.4]], StripOnInput -> False], 
+                  StyleBox[
+                   LineBox[{{{7.5, -105.}, 
+                    Offset[{2.5, 0.}, {7.5, -105.}]}, {{7.5, -97.5}, 
+                    Offset[{2.5, 0.}, {7.5, -97.5}]}, {{7.5, -90.}, 
+                    Offset[{2.5, 0.}, {7.5, -90.}]}, {{7.5, -82.5}, 
+                    Offset[{2.5, 0.}, {7.5, -82.5}]}, {{7.5, -67.5}, 
+                    Offset[{2.5, 0.}, {7.5, -67.5}]}, {{7.5, -60.}, 
+                    Offset[{2.5, 0.}, {7.5, -60.}]}, {{7.5, -52.5}, 
+                    Offset[{2.5, 0.}, {7.5, -52.5}]}, {{7.5, -45.}, 
+                    Offset[{2.5, 0.}, {7.5, -45.}]}, {{
+                    7.5, -29.99999999999999}, 
+                    Offset[{2.5, 0.}, {7.5, -29.99999999999999}]}, {{
+                    7.5, -22.5}, 
+                    Offset[{2.5, 0.}, {7.5, -22.5}]}, {{7.5, -15.}, 
+                    Offset[{2.5, 0.}, {7.5, -15.}]}, {{7.5, -7.5}, 
+                    Offset[{2.5, 0.}, {7.5, -7.5}]}, {{7.5, 7.5}, 
+                    Offset[{2.5, 0.}, {7.5, 7.5}]}, {{7.5, 15.}, 
+                    Offset[{2.5, 0.}, {7.5, 15.}]}, {{7.5, 22.5}, 
+                    Offset[{2.5, 0.}, {7.5, 22.5}]}, {{7.5, 30.}, 
+                    Offset[{2.5, 0.}, {7.5, 30.}]}, {{7.5, 45.}, 
+                    Offset[{2.5, 0.}, {7.5, 45.}]}, {{7.5, 
+                    52.500000000000014`}, 
+                    Offset[{2.5, 0.}, {7.5, 52.500000000000014`}]}, {{7.5, 
+                    60.}, 
+                    Offset[{2.5, 0.}, {7.5, 60.}]}, {{7.5, 67.5}, 
+                    Offset[{2.5, 0.}, {7.5, 67.5}]}, {{7.5, 82.5}, 
+                    Offset[{2.5, 0.}, {7.5, 82.5}]}, {{7.5, 90.}, 
+                    Offset[{2.5, 0.}, {7.5, 90.}]}, {{7.5, 97.5}, 
+                    Offset[{2.5, 0.}, {7.5, 97.5}]}, {{7.5, 105.}, 
+                    Offset[{2.5, 0.}, {7.5, 105.}]}}], 
+                   Directive[
+                    AbsoluteThickness[0.2], 
+                    GrayLevel[0.4], 
+                    Opacity[0.3]], StripOnInput -> False]}, 
+                 StyleBox[
+                  StyleBox[{{
+                    StyleBox[{
+                    InsetBox[
+                    FormBox["0", TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, -112.5}], {-1, 0.}, Automatic, {1, 
+                    0}], 
+                    InsetBox[
+                    FormBox[
+                    TagBox[
+                    InterpretationBox["\"0.25\"", 0.25, AutoDelete -> True], 
+                    NumberForm[#, {
+                    DirectedInfinity[1], 2}]& ], TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, -75.}], {-1, 0.}, Automatic, {1, 
+                    0}], 
+                    InsetBox[
+                    FormBox[
+                    TagBox[
+                    InterpretationBox["\"0.50\"", 0.5, AutoDelete -> True], 
+                    NumberForm[#, {
+                    DirectedInfinity[1], 2}]& ], TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, -37.5}], {-1, 0.}, Automatic, {1, 
+                    0}], 
+                    InsetBox[
+                    FormBox[
+                    TagBox[
+                    InterpretationBox["\"0.75\"", 0.75, AutoDelete -> True], 
+                    NumberForm[#, {
+                    DirectedInfinity[1], 2}]& ], TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, 0.}], {-1, 0.}, Automatic, {1, 0}], 
+                    InsetBox[
+                    FormBox[
+                    TagBox[
+                    InterpretationBox["\"1.00\"", 1., AutoDelete -> True], 
+                    NumberForm[#, {
+                    DirectedInfinity[1], 2}]& ], TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, 37.5}], {-1, 0.}, Automatic, {1, 
+                    0}], 
+                    InsetBox[
+                    FormBox[
+                    TagBox[
+                    InterpretationBox["\"1.25\"", 1.25, AutoDelete -> True], 
+                    NumberForm[#, {
+                    DirectedInfinity[1], 2}]& ], TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, 75.}], {-1, 0.}, Automatic, {1, 
+                    0}], 
+                    InsetBox[
+                    FormBox[
+                    TagBox[
+                    InterpretationBox["\"1.50\"", 1.5, AutoDelete -> True], 
+                    NumberForm[#, {
+                    DirectedInfinity[1], 2}]& ], TraditionalForm], 
+                    Offset[{7., 0.}, {7.5, 112.5}], {-1, 0.}, Automatic, {1, 
+                    0}]}, 
+                    Directive[
+                    AbsoluteThickness[0.2], 
+                    GrayLevel[0.4]], {
+                    Directive[
+                    Opacity[1]], 
+                    Directive[
+                    Opacity[1]]}, StripOnInput -> False], 
+                    
+                    StyleBox[{{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, \
+{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}}, 
+                    Directive[
+                    AbsoluteThickness[0.2], 
+                    GrayLevel[0.4], 
+                    Opacity[0.3]], {
+                    Directive[
+                    Opacity[1]], 
+                    Directive[
+                    Opacity[1]]}, StripOnInput -> False]}, {}}, {
+                    Directive[
+                    Opacity[1]], 
+                    Directive[
+                    Opacity[1]]}, StripOnInput -> False], "GraphicsLabel", 
+                  StripOnInput -> False]}, "GraphicsTicks", StripOnInput -> 
+                False], 
+               Directive[
+                AbsoluteThickness[0.2], 
+                Opacity[0.3], 
+                GrayLevel[0]], StripOnInput -> False]}}, PlotRangePadding -> 
+            Scaled[0.02], PlotRange -> All, Frame -> True, 
+            FrameTicks -> {{False, False}, {True, False}}, FrameStyle -> 
+            Opacity[0], FrameTicksStyle -> Opacity[0], 
+            ImageSize -> {Automatic, 225}, BaseStyle -> {}], Alignment -> 
+           Left, AppearanceElements -> None, ImageMargins -> {{5, 5}, {5, 5}},
+            ImageSizeAction -> "ResizeToFit"], LineIndent -> 0, StripOnInput -> 
+          False], {FontFamily -> "Arial"}, Background -> Automatic, 
+         StripOnInput -> False], TraditionalForm]}, "BarLegend", 
+      DisplayFunction -> (#& ), 
+      InterpretationFunction :> (RowBox[{"BarLegend", "[", 
+         RowBox[{
+           RowBox[{"{", 
              RowBox[{
                RowBox[{
-                 RowBox[{"ColorData", "[", "\"DeepSeaColors\"", "]"}], "[", 
-                 RowBox[{"1", "-", "#1"}], "]"}], "&"}], ",", 
-             RowBox[{"{", 
-               RowBox[{"0.`", ",", "1.5000000000000002`"}], "}"}]}], "}"}], 
-         ",", 
-         RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}], ",", 
-         RowBox[{"Charting`TickSide", "\[Rule]", "Right"}], ",", 
-         RowBox[{"ColorFunctionScaling", "\[Rule]", "True"}]}], "]"}]& )]},
+                 RowBox[{
+                   RowBox[{"ColorData", "[", "\"DeepSeaColors\"", "]"}], "[", 
+                   RowBox[{"1", "-", "#1"}], "]"}], "&"}], ",", 
+               RowBox[{"{", 
+                 RowBox[{"0.`", ",", "1.5000000000000002`"}], "}"}]}], "}"}], 
+           ",", 
+           RowBox[{"LabelStyle", "\[Rule]", 
+             RowBox[{"{", "}"}]}], ",", 
+           RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}], ",", 
+           RowBox[{"Charting`TickSide", "\[Rule]", "Right"}], ",", 
+           RowBox[{"ColorFunctionScaling", "\[Rule]", "True"}]}], "]"}]& )], 
+     TraditionalForm], TraditionalForm]},
   "Legended",
   DisplayFunction->(GridBox[{{
       TagBox[
@@ -1243,7 +1417,7 @@ I8aR4EhwJDgSHAmOBEeKI8WR4khxpDhSHBmODEeGI8OR4chw/JF/3eEbIw==
          RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
  CellChangeTimes->{{3.613653964808835*^9, 3.6136539876131396`*^9}, 
    3.6136641514584785`*^9, 3.613910944569585*^9, 3.6145324403524327`*^9, 
-   3.6161756093150077`*^9}]
+   3.6161756093150077`*^9, 3.6276747626914773`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1496,17 +1670,25 @@ Cell[BoxData[
      ArrowBox[{{13.928123757988905`, 28.785714285714295`}, {
       13.929019099153951`, 28.785714285714295`}}]}}},
   AspectRatio->1,
+  DisplayFunction->Identity,
   Frame->True,
   FrameLabel->{
     FormBox["\"x\"", TraditionalForm], 
     FormBox["\"y\"", TraditionalForm]},
-  Method->{"TransparentPolygonMesh" -> True},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "TransparentPolygonMesh" -> True},
   PlotRange->{{-1.2299410969801832`, 
    16.229941096980184`}, {-1.2299410969801832`, 32.229941096980184`}},
   PlotRangeClipping->True,
-  PlotRangePadding->{
-    Scaled[0.02], 
-    Scaled[0.02]}]], "Output",
+  PlotRangePadding->{{
+     Scaled[0.05], 
+     Scaled[0.05]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{{3.570387362477893*^9, 3.570387367222164*^9}, 
    3.5703884817509117`*^9, 3.570388537049075*^9, 3.5703886688046107`*^9, 
    3.570388771174466*^9, 3.5703889515267816`*^9, 3.570438198911257*^9, 
@@ -1525,7 +1707,7 @@ Cell[BoxData[
    3.6134965587943335`*^9, 3.61359119266678*^9, 3.6135915465290194`*^9, 
    3.6136267186254425`*^9, 3.613650379527769*^9, 3.6136520842662745`*^9, 
    3.613664151544483*^9, 3.6139109446685905`*^9, 3.6145324404374375`*^9, 
-   3.616175609450525*^9}]
+   3.616175609450525*^9, 3.627674766101672*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -1606,22 +1788,23 @@ Cell[BoxData["129"], "Output",
    3.6135915465580215`*^9, 3.6136267243517704`*^9, {3.61365081680678*^9, 
    3.6136508223260956`*^9}, {3.6136521062115297`*^9, 3.613652111724845*^9}, 
    3.6136641613600445`*^9, 3.613910944693592*^9, 3.614532440465439*^9, 
-   3.6161756094725275`*^9}]
+   3.6161756094725275`*^9, 3.627674772499038*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"?", "MLLatticeBoltzmann"}]], "Input",
+ RowBox[{"?", "LatticeBoltzmann"}]], "Input",
  CellChangeTimes->{{3.5691429329485817`*^9, 3.569142934160651*^9}, {
-  3.569143112782868*^9, 3.569143132974023*^9}}],
+  3.569143112782868*^9, 3.569143132974023*^9}, {3.6276747766082735`*^9, 
+  3.6276747768842893`*^9}}],
 
 Cell[BoxData[
- StyleBox["\<\"MLLatticeBoltzmann[omega_Real, numsteps_Integer, gravity_List, \
+ StyleBox["\<\"LatticeBoltzmann[omega_Real, numsteps_Integer, gravity_List, \
 f0_List, type0_List] runs a Lattice Boltzmann Method (LBM) simulation\"\>", 
   "MSG"]], "Print", "PrintUsage",
- CellChangeTimes->{3.6161756096390486`*^9},
- CellTags->"Info3616182809-4577413"]
+ CellChangeTimes->{3.6276747779773517`*^9},
+ CellTags->"Info3627678377-9086551"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1632,7 +1815,7 @@ Cell[BoxData[
      SubscriptBox["type", "evolv"], ",", 
      SubscriptBox["f", "evolv"], ",", 
      SubscriptBox["mass", "evolv"]}], "}"}], "=", 
-   RowBox[{"MLLatticeBoltzmann", "[", 
+   RowBox[{"LatticeBoltzmann", "[", 
     RowBox[{
      RowBox[{"N", "[", 
       SubscriptBox["\[Omega]", "val"], "]"}], ",", 
@@ -1650,7 +1833,8 @@ Cell[BoxData[
    3.5703871784823694`*^9}, {3.5706890181494727`*^9, 
    3.5706890672262797`*^9}, {3.5707298812496457`*^9, 3.570729909044235*^9}, {
    3.612775146805969*^9, 3.612775161914833*^9}, {3.61277683206036*^9, 
-   3.6127768323103743`*^9}, 3.612861916501159*^9}],
+   3.6127768323103743`*^9}, 3.612861916501159*^9, {3.6276747823606024`*^9, 
+   3.6276747824886093`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1679,7 +1863,7 @@ Cell[BoxData[
    3.6135932507534957`*^9, 3.6136267276099567`*^9, 3.6136377804471426`*^9, 
    3.613650825690288*^9, 3.6136521190802655`*^9, 3.61365318057898*^9, 
    3.6136641635401697`*^9, 3.613664472357833*^9, 3.6139109450056095`*^9, 
-   3.6145324408564615`*^9, 3.616175609755063*^9}],
+   3.6145324408564615`*^9, 3.616175609755063*^9, 3.6276747884289494`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1696,7 +1880,7 @@ Cell[BoxData[
    3.6135932507534957`*^9, 3.6136267276099567`*^9, 3.6136377804471426`*^9, 
    3.613650825690288*^9, 3.6136521190802655`*^9, 3.61365318057898*^9, 
    3.6136641635401697`*^9, 3.613664472357833*^9, 3.6139109450056095`*^9, 
-   3.6145324408564615`*^9, 3.616175609757064*^9}],
+   3.6145324408564615`*^9, 3.616175609755063*^9, 3.6276747884309497`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1713,7 +1897,7 @@ Cell[BoxData[
    3.6135932507534957`*^9, 3.6136267276099567`*^9, 3.6136377804471426`*^9, 
    3.613650825690288*^9, 3.6136521190802655`*^9, 3.61365318057898*^9, 
    3.6136641635401697`*^9, 3.613664472357833*^9, 3.6139109450056095`*^9, 
-   3.6145324408564615`*^9, 3.6161756097580633`*^9}]
+   3.6145324408564615`*^9, 3.616175609755063*^9, 3.6276747884319496`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1789,7 +1973,7 @@ Cell[BoxData[
    3.6136377823282504`*^9, 3.6136508268203526`*^9, 3.6136521222064447`*^9, 
    3.613653181357024*^9, {3.6136532157259903`*^9, 3.6136532204672613`*^9}, 
    3.61366416529527*^9, 3.6136644733178873`*^9, 3.6139109579783516`*^9, 
-   3.614532440878463*^9, 3.616175609777066*^9}],
+   3.614532440878463*^9, 3.616175609777066*^9, 3.6276748090611296`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1826,7 +2010,7 @@ Cell[BoxData[
    3.6136377823282504`*^9, 3.6136508268203526`*^9, 3.6136521222064447`*^9, 
    3.613653181357024*^9, {3.6136532157259903`*^9, 3.6136532204672613`*^9}, 
    3.61366416529527*^9, 3.6136644733178873`*^9, 3.6139109579783516`*^9, 
-   3.614532440878463*^9, 3.616175609779066*^9}],
+   3.614532440878463*^9, 3.616175609777066*^9, 3.6276748090631294`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -1883,7 +2067,7 @@ Cell[BoxData[
    3.6136377823282504`*^9, 3.6136508268203526`*^9, 3.6136521222064447`*^9, 
    3.613653181357024*^9, {3.6136532157259903`*^9, 3.6136532204672613`*^9}, 
    3.61366416529527*^9, 3.6136644733178873`*^9, 3.6139109579783516`*^9, 
-   3.614532440878463*^9, 3.616175609781067*^9}]
+   3.614532440878463*^9, 3.616175609777066*^9, 3.6276748090651293`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1927,16 +2111,22 @@ Cell[BoxData[
        "\"\<t\>\"", ",", 
         "\"\<\[LeftBracketingBar]\[CapitalDelta]m\[RightBracketingBar]\>\""}],
         "}"}]}], ",", 
-     RowBox[{"PlotStyle", "\[Rule]", "Blue"}]}], "]"}]}]}]], "Input",
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"Blue", ",", 
+        RowBox[{"PointSize", "[", "Small", "]"}]}], "}"}]}]}], 
+    "]"}]}]}]], "Input",
  CellChangeTimes->{{3.57073941054669*^9, 3.5707394582524185`*^9}, {
    3.6128656846436844`*^9, 3.612865687520849*^9}, {3.6128657680244536`*^9, 
    3.6128658719944005`*^9}, {3.6134910050146756`*^9, 3.613491007783834*^9}, 
    3.6136521383483677`*^9, {3.6136531864743176`*^9, 3.613653209390628*^9}, {
-   3.616175670112728*^9, 3.61617572548726*^9}}],
+   3.616175670112728*^9, 3.61617572548726*^9}, {3.627674814195423*^9, 
+   3.6276748230319285`*^9}}],
 
 Cell[BoxData[
- GraphicsBox[{{{}, {{}, 
-     {RGBColor[0, 0, 1], PointBox[CompressedData["
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0, 0, 1], PointSize[Small], AbsoluteThickness[1.6], 
+     PointBox[CompressedData["
 1:eJxVkw1QFGUYx1dGUjLHS/QoLcdKOT6OEw8k5VD+coLnwcFxXxz3wamMeImk
 ZJoKyUL5MeqJonWYiAqHEdgooFRSsuVHZTQ4mgWjgiVnIeo4gZrgONl4++y0
 Mzs7v/09//d9dvfZ1xav0C3xYxiGfXr+d3123Itvkm7mSq9GcL4byOlb71L2
@@ -1963,15 +2153,15 @@ Fva3wPtnkH815S2IvmkIqaW8BcpF9vPEnAWFed5uYsaK+wNfyGsob0V+yIM6
 aiZm7PBL2RhIDDsiL0/ME/J2eMa6mj6lvB1ro2OqhHwWEmQ3yz6jfBa2SKxf
 NlA+C49m5V8g5rJwekvA+GOUd+DckcsrGynvALPhR7mQd0B0vcQt5B04Ns/4
 s5BfCPV4he34U/4XL+SNGA==
-       "]]}, {}}, {}}, {}},
+      "]]}, {}}, {}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->True,
+  Axes->{True, True},
   AxesLabel->{
     FormBox["\"t\"", TraditionalForm], 
     FormBox[
     "\"\[LeftBracketingBar]\[CapitalDelta]m\[RightBracketingBar]\"", 
      TraditionalForm]},
-  AxesOrigin->{0, -16.16944260351409},
+  AxesOrigin->{0, -17.343031179575597`},
   CoordinatesToolOptions:>{"DisplayFunction" -> ({
       Part[#, 1], 
       Exp[
@@ -1979,181 +2169,85 @@ s5BfCPV4he34U/4XL+SNGA==
       Part[#, 1], 
       Exp[
        Part[#, 2]]}& )},
-  FrameTicks->{{{{-16.11809565095832, 
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{
+     Charting`ScaledTicks[{Log, Exp}], 
+     Charting`ScaledFrameTicks[{Log, Exp}]}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{},
+  PlotRange->{{0, 128.}, {-17.067744970375983`, 0}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->FrontEndValueCache[{Automatic, 
+     Charting`ScaledTicks[{Log, Exp}]}, {Automatic, {{-16.11809565095832, 
        FormBox[
         TemplateBox[{"10", 
           RowBox[{"-", "7"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-        TraditionalForm]}, {-11.512925464970229`, 
+        TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-11.512925464970229`, 
        FormBox[
         TemplateBox[{"10", 
           RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-        TraditionalForm]}, {-6.907755278982137, 
-       FormBox["0.001`", TraditionalForm]}, {-2.3025850929940455`, 
-       FormBox["0.1`", TraditionalForm]}, {-13.633189001170319`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.98260143502917, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.591735126342158`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.311433161188, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.09274396022317, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-11.913403031567354`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-11.761386824268728`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-11.629459281226179`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-9.028018815182229, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-8.377431249041079, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.986564940354067, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.706262975199909, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.487573774235079, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.308232845579262, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.156216638280637, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.024289095238088, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-4.422848629194137, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-3.7722610630529876`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-3.3813947543659757`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-3.101092789211817, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.882403588246988, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.703062659591171, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.551046452292545, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.419118909249997, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}}, {{-16.11809565095832, 
-       FormBox["\"\"", TraditionalForm]}, {-11.512925464970229`, 
-       FormBox["\"\"", TraditionalForm]}, {-6.907755278982137, 
-       FormBox["\"\"", TraditionalForm]}, {-2.3025850929940455`, 
-       FormBox["\"\"", TraditionalForm]}, {-13.633189001170319`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.98260143502917, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.591735126342158`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.311433161188, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-12.09274396022317, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-11.913403031567354`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-11.761386824268728`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-11.629459281226179`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-9.028018815182229, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-8.377431249041079, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.986564940354067, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.706262975199909, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.487573774235079, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.308232845579262, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.156216638280637, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-7.024289095238088, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-4.422848629194137, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-3.7722610630529876`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-3.3813947543659757`, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-3.101092789211817, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.882403588246988, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.703062659591171, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.551046452292545, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}, {-2.419118909249997, 
-       FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-        Thickness[0.001]}}}}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  Method->{},
-  PlotRange->{{0, 128.}, {-16.16944260351409, 0}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{2.56, 2.56}, {0.3233888520702818, 0.3233888520702818}},
-  Ticks->{Automatic, {{-16.11809565095832, 
-      FormBox[
-       TemplateBox[{"10", 
-         RowBox[{"-", "7"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-       TraditionalForm]}, {-11.512925464970229`, 
-      FormBox[
-       TemplateBox[{"10", 
-         RowBox[{"-", "5"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
-       TraditionalForm]}, {-6.907755278982137, 
-      FormBox["0.001`", TraditionalForm]}, {-2.3025850929940455`, 
-      FormBox["0.1`", TraditionalForm]}, {-13.633189001170319`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-12.98260143502917, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-12.591735126342158`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-12.311433161188, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-12.09274396022317, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-11.913403031567354`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-11.761386824268728`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-11.629459281226179`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-9.028018815182229, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-8.377431249041079, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-7.986564940354067, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-7.706262975199909, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-7.487573774235079, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-7.308232845579262, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-7.156216638280637, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-7.024289095238088, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-4.422848629194137, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-3.7722610630529876`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-3.3813947543659757`, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-3.101092789211817, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-2.882403588246988, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-2.703062659591171, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-2.551046452292545, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}, {-2.419118909249997, 
-      FormBox["\"\"", TraditionalForm], {0.00375, 0.}, {
-       Thickness[0.001]}}}}]], "Output",
+        TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-6.907755278982137, 
+       FormBox[
+        TemplateBox[{"10", 
+          RowBox[{"-", "3"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
+        TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-2.3025850929940455`, 
+       FormBox[
+        TemplateBox[{"10", 
+          RowBox[{"-", "1"}]}, "Superscript", SyntaxForm -> SuperscriptBox], 
+        TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-13.815510557964274`, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          
+          GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+           Baseline], "CacheGraphics" -> False], 
+         Spacer[{0., 0.}]], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-9.210340371976182, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          
+          GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+           Baseline], "CacheGraphics" -> False], 
+         Spacer[{0., 0.}]], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-4.605170185988091, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          
+          GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+           Baseline], "CacheGraphics" -> False], 
+         Spacer[{0., 0.}]], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {0., 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          
+          GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+           Baseline], "CacheGraphics" -> False], 
+         Spacer[{0., 0.}]], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.302585092994046, 
+       FormBox[
+        InterpretationBox[
+         StyleBox[
+          
+          GraphicsBox[{}, ImageSize -> {0., 0.}, BaselinePosition -> 
+           Baseline], "CacheGraphics" -> False], 
+         Spacer[{0., 0.}]], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}}}]]], "Output",
  CellChangeTimes->{
   3.570739434728073*^9, 3.5709568962099543`*^9, 3.6127768176735373`*^9, 
    3.6127773074785523`*^9, 3.612784646340827*^9, 3.612789654358269*^9, 
@@ -2169,7 +2263,8 @@ s5BfCPV4he34U/4XL+SNGA==
    3.6136267337123055`*^9, 3.613637785046406*^9, 3.6136508311866026`*^9, {
    3.6136521280817804`*^9, 3.613652138937402*^9}, {3.6136531838981695`*^9, 
    3.6136531998040795`*^9}, 3.6136641675984015`*^9, 3.6136644761800513`*^9, 
-   3.613910985821944*^9, 3.6145324409424667`*^9, 3.6161756098505754`*^9}]
+   3.613910985821944*^9, 3.6145324409424667`*^9, 3.6161756098505754`*^9, {
+   3.6276748119642954`*^9, 3.6276748238559756`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2198,7 +2293,8 @@ Cell[BoxData[
   3.613490529086454*^9, {3.613490564736493*^9, 3.6134906018806176`*^9}, 
    3.613490635175522*^9, 3.6134907073836517`*^9, 3.613637795034977*^9, 
    3.613650836999935*^9, 3.613652134471146*^9, 3.6136641717526393`*^9, 
-   3.613910988654106*^9, 3.6145324419605246`*^9, 3.61617561059667*^9}]
+   3.613910988654106*^9, 3.6145324419605246`*^9, 3.61617561059667*^9, 
+   3.6277021222582464`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -2239,15 +2335,15 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`i61$$ = 20, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`i5$$ = 20, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {
-    "\"min\"" :> {$CellContext`i61$$ = 1}, 
-     "\"max\"" :> {$CellContext`i61$$ = 129}}, Typeset`bookmarkMode$$ = 
-    "Menu", Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"min\"" :> {$CellContext`i5$$ = 1}, 
+     "\"max\"" :> {$CellContext`i5$$ = 129}}, Typeset`bookmarkMode$$ = "Menu",
+     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`i61$$], 1, ""}, 1, 129, 1}}, Typeset`size$$ = 
+       Hold[$CellContext`i5$$], 1, ""}, 1, 129, 1}}, Typeset`size$$ = 
     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`i61$115490$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`i5$73505$$ = 0}, 
     PaneBox[
      PanelBox[
       DynamicWrapperBox[GridBox[{
@@ -2257,7 +2353,7 @@ Cell[BoxData[
             TagBox[
              StyleBox[GridBox[{
                 {"\<\"\"\>", 
-                 AnimatorBox[Dynamic[$CellContext`i61$$], {1, 129, 1},
+                 AnimatorBox[Dynamic[$CellContext`i5$$], {1, 129, 1},
                   AnimationRate->Automatic,
                   
                   AppearanceElements->{
@@ -2333,6 +2429,14 @@ syb2z5rYP2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a1LV/wnPuv97/97v
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 0\"", TraditionalForm]], 2->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlsEJwkAUBRdswBJiJfZgCULOtmwJlmAkt8HLwvr+GmYgTHinzewll/vj
@@ -2378,6 +2482,14 @@ syb2z5rYP2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a1LV/wnPuv97/97v
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 1\"", TraditionalForm]], 3->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlsEJwkAUBRdswBK0EnuwBMGzLVuCJRjxNphD5Ps2a2ZgmfAuCbOXHC+3
@@ -2423,6 +2535,14 @@ updR9lH6b9XE/lkT9177E7+ewC0=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 2\"", TraditionalForm]], 4->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztkcEJAjEUBQM2YAlaiT1YguDZli3BElzxNughEF/ycQaWWd5hyU6Ol9v5
@@ -2468,6 +2588,13 @@ e+/3R99L73mrdv71Xr1/7zlW2+0/d7f/3N3+c3f7z92r969+L1X6j7qXKnuV
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 3\"", TraditionalForm]], 5->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztksEJwkAUBRdswBK0EnuwBMGzLVuCJRjxNnhZiO/n6wyECe+SZTbHy+18
@@ -2502,9 +2629,9 @@ mtg/a+JetT8B/MKv2w==
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
                     5, 32}}, {{6, 0}, {6, 32}}, {{7, 0}, {7, 32}}, {{8, 0}, {
                     8, 32}}, {{9, 0}, {9, 32}}, {{10, 0}, {10, 32}}, {{11, 
-                    0}, {11, 32}}, {{12, 0}, {12, 32}}, {{13, 0}, {13, 
-                    32}}, {{14, 0}, {14, 32}}, {{15, 0}, {15, 32}}, {{16, 
-                    0}, {16, 32}}}],
+                    0}, {11, 32}}, {{12, 0}, {12, 32}}, {{13, 0}, {13, 32}}, {
+                    {14, 0}, {14, 32}}, {{15, 0}, {15, 32}}, {{16, 0}, {16, 
+                    32}}}],
                     Antialiasing->False]}}},
                  Axes->True,
                  AxesLabel->{
@@ -2513,6 +2640,14 @@ mtg/a+JetT8B/MKv2w==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 4\"", TraditionalForm]], 6->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlsEJAkEUxQZswBK0EnuwBMGzLVuCJah4C4IMrO/v1wSWyLvskPGw+9Pl
@@ -2558,6 +2693,14 @@ TKr6/6uJ/bMm7lX7HfTkoWc=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 5\"", TraditionalForm]], 7->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMENgkAUBTehAUuASuzBEkw82zIlWIIYby/uAVze/g8zCRnzYgQHdLo/
@@ -2568,7 +2711,6 @@ ob/XCv29VujvtUJ/rxX6e63Q32uF/l4r9Pdaob/XSvb+s9i1Z++/d5/a92n1
                    "], {{0, 0}, {16, 32}}, {0, 1}], {
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
@@ -2603,6 +2745,14 @@ ob/XCv29VujvtUJ/rxX6e63Q32uF/l4r9Pdaob/XSvb+s9i1Z++/d5/a92n1
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 6\"", TraditionalForm]], 8->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJAjEUBQM2YAlaiT1YguDZli3BElzxNniJystPmIFl5B10mY2HPV5u
@@ -2648,6 +2798,14 @@ ob/XCv29VujvtUJ/rxX6e63Q32uF/l4r9Pdaob/XSvb+s9i1Z++/d5/a92n1
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 7\"", TraditionalForm]], 9->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8sJwkAABRdswBK0EnuwBMGzLVuCJRjxNnjZmLz9MANh5B1imOwl59vj
@@ -2693,6 +2851,14 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1qRV/yc8yz56/9rna7WvfS+1
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 8\"", TraditionalForm]], 10->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJg0AUBRfSQEowldhDSgh4tmVLSAlRvD0Csrj79n+YAZnwDkZnQ16f
@@ -2738,6 +2904,14 @@ uWTZs/SPdu6t76PQ32uF/l4r7KP2H4OBnok=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 9\"", TraditionalForm]], 11->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0EnuwBMGzLVuCJRjJbfASCO/vDzOwTHinMBtyfbzu
@@ -2783,6 +2957,14 @@ r9q/yMSTMw==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 10\"", TraditionalForm]], 12->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0EnuwBMGzLVuCJRjxNggSCO/vDzMQJrzTMhtyvj2u
@@ -2828,6 +3010,14 @@ syb2z5rYP2ti/6yJ/bMm9s+a2D9rYv+sSVX/J7z3vUv/teebbbd/7W7/Ofeq
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 11\"", TraditionalForm]], 13->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwkAUBA/SgCWYSuzBEgS/bdkSUkIi/i0H8eTYe++YgTBhIRLmiOvj
@@ -2838,6 +3028,7 @@ O/1j7ln6z3ouo/qffY+zfRfZ/3/oX3/OZfrXn6P/b/us/bOcS/b+vc6l1678
                    "], {{0, 0}, {16, 32}}, {0, 1}], {
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
                     StyleBox[
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
@@ -2846,12 +3037,12 @@ O/1j7ln6z3ouo/qffY+zfRfZ/3/oX3/OZfrXn6P/b/us/bOcS/b+vc6l1678
                     23}}, {{0, 22}, {16, 22}}, {{0, 21}, {16, 21}}, {{0, 
                     20}, {16, 20}}, {{0, 19}, {16, 19}}, {{0, 18}, {16, 
                     18}}, {{0, 17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 
-                    15}, {16, 15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 
-                    13}}, {{0, 12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 
-                    10}, {16, 10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0,
-                     7}, {16, 7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 
-                    4}, {16, 4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 
-                    1}, {16, 1}}, {{0, 0}, {16, 0}}}],
+                    15}, {16, 15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 13}},
+                     {{0, 12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 10}, {16, 
+                    10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0, 7}, {16, 
+                    7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 4}, {16, 
+                    4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 1}, {16, 
+                    1}}, {{0, 0}, {16, 0}}}],
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -2872,6 +3063,14 @@ O/1j7ln6z3ouo/qffY+zfRfZ/3/oX3/OZfrXn6P/b/us/bOcS/b+vc6l1678
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 12\"", TraditionalForm]], 14->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRdswBK0EnuwBMGzLVuCJRjJbdDDgry/2cxAmPBOyyREPN8e
@@ -2917,6 +3116,14 @@ f9bE/lkT+2dN3Kv2N8a+qKE=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 13\"", TraditionalForm]], 15->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRdswBK0EnuwBMGzLVuCJRjJ7aGHBZ2/G2cgjLxTnAVJPF5u
@@ -2962,6 +3169,14 @@ JPZnndifdWJ/1on9WSfuVfsTS16tfQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 14\"", TraditionalForm]], 16->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRdswBK0EnuwBMGzLVuCJRjxNkQkEN/ujzMQRt5FmQ2GHC+3
@@ -3007,6 +3222,14 @@ JPZnndifdWJ/1on9WSfuVfsTS16tfQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 15\"", TraditionalForm]], 17->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAABA9swBK0EnuwBMG3LVuCJRjJbzCPhMveec5AGNlPzByIOd8e
@@ -3052,6 +3275,14 @@ rIn9syb2z5rYP2vi3mp/AzBmr/s=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 16\"", TraditionalForm]], 18->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRdswBK0EnuwBMGzLVuCJRjJbTCHwPL+ZpmBMOGdktlDyPXx
@@ -3097,6 +3328,14 @@ uj9PrbXLcp2X63e/8rm1v7iPseu+JvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 17\"", TraditionalForm]], 19->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlsEJwkAUBRdswBJiJfZgCYJnW7YESzDi7eESDLvv/3VnYBl5lyQjYk7X
@@ -3125,7 +3364,6 @@ Ffp7rdDfa4X+Xiv091r51/4P8d59tv6tutX22nP2vu7o/X+976id/jl3+sfu
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -3142,6 +3380,14 @@ Ffp7rdDfa4X+Xiv091r51/4P8d59tv6tutX22nP2vu7o/X+976id/jl3+sfu
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 18\"", TraditionalForm]], 20->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwzAQBAVuICXYlaSHlBDwOy2nBJdgh/yW5CEQe3diBsyEfYlRHvb2
@@ -3187,6 +3433,14 @@ vefOtlfp33u+bHuV959Z//9V+o+6l6j7mvX7K+q+Rn/n/rNSvX+2e6d/biv0
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 19\"", TraditionalForm]], 21->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRfSgCUkldiDJQiebdkSUkIi3h6GsLB5/+8yA2HkXRInEsXl
@@ -3232,6 +3486,14 @@ tUJ/rxX6e63Q32tl1P4fcet91P5Xdzt6n0d76/tVe/4s/WuvO9tO/9id/rE7
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 20\"", TraditionalForm]], 22->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJg0AUBRdsICXEStJDSgh4TsspwRI0eHtEwoK8//8yAzLhnZZZD2Z+
@@ -3277,6 +3539,14 @@ ob/XCv29VujvtUJ/rxX2qH0DhSCh5w==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 21\"", TraditionalForm]], 23->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRdswBK0EnuwBMGzLVuCJRjxNphDZPN2P8xAGHkXk8nBxPPt
@@ -3322,6 +3592,14 @@ sX/WxP5ZE/tnTeyfNbF/1sT+WRP3Ufsbhp6fiQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 22\"", TraditionalForm]], 24->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwlAQBT/YgCVoJfZgCYJnW7YESzCS20ORhfh29zsDYeRd8pkgJMfL
@@ -3367,6 +3645,13 @@ vVbo77VCf68V+nutsGftT2foqSE=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 23\"", TraditionalForm]], 25->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlsENgkAUBTexAUvQSuzBEkw427IlWIIYbi9y2M36/v9kJiFD3gUYDnB9
@@ -3412,6 +3697,14 @@ rdDfa6V6/5c4eq/ef1aHveeZtY++l97rZOnfe9/ZdvrH7vSP3ekfu2frn+17
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 24\"", TraditionalForm]], 26->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRfSgCVoJfZgCYJnW7aElGCCt4eLfJD3/25mIIy8i+sckni5
@@ -3457,6 +3750,14 @@ Ffp7rdDfa4X+Xiv091qhv9cKe9b+BpUAqOE=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 25\"", TraditionalForm]], 27->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRdswBK0EnuwBMGzLVuCJRjJ7eEiH9b39yczEEbeKTuRQM63
@@ -3467,7 +3768,6 @@ rxX6e63Q32uF/l4r9Pdaob/XCv29VujvtcKetb8Bw/Gmow==
                    "], {{0, 0}, {16, 32}}, {0, 1}], {
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
@@ -3502,6 +3802,14 @@ rxX6e63Q32uF/l4r9Pdaob/XCv29VujvtcKetb8Bw/Gmow==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 26\"", TraditionalForm]], 28->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMENgkAUBTexAUrQSuyBEkw827IlUAIYby/uYc3y/l+YSciQdxGGRKK3
@@ -3547,6 +3855,14 @@ Otf2bP1br2P0PVv/qL12n3vv2b7/R3+/HPX3V7bncrb/H45uhf5eK/T3WqG/
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 27\"", TraditionalForm]], 29->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRdswBJiJfZgCULOtmwJlmAkt4d7WNh9/2czA2HCu5hMwKC3
@@ -3592,6 +3908,14 @@ hf5eK/T3WqG/1wr9vVbo77VCf68V+nut0N9rhT1q/wKpap9p
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 28\"", TraditionalForm]], 30->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRdswBJiJfZgCYLntGwJlmDE28McFnbf/9/MQJjwTtkJol7u
@@ -3637,6 +3961,14 @@ q/TvPVfveWbv/9q/97mz7fSP3ekfu9M/do/qP+r3Q+9zZ9uz9e99jup7tv6z
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 29\"", TraditionalForm]], 31->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0EnuwBMGzLVuCJRjJ7aGHDZv3/3dnIIy8i3GWmPPt
@@ -3682,6 +4014,14 @@ v9cK/b1W6O+1Qn+vFfp7rdDfa4X+XivsUfsbcaGfSQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 30\"", TraditionalForm]], 32->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRdswBJiJfZgCULOtmwJlmAkt4cRNuy+/d/MQBh5F5MJRvFy
@@ -3727,6 +4067,14 @@ T6t9732pfZ8o/WvPe9RO/5h7tP7Rnie99yz9a88vy56l/7/el1H9s/ye6b1H
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 31\"", TraditionalForm]], 33->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl1EKglAUBR+4gZZQK2kPLUHouy23BJeQ4d9BPy7peffmDMjEASEnS7qN
@@ -3772,6 +4120,14 @@ bP3P9hyv8vyt/r2r/v8r2+eyt5Wz9e9thf5eK/T3WqG/1wr9vVbo77VCf68V
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 32\"", TraditionalForm]], 34->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztltEJwjAURQMu4Ag6iTs4guC3KzuCI1jx71KRyHv3JfYcCLdcKE0OTZvj
@@ -3818,6 +4174,14 @@ Kvj3poJ/byr496aCf28q+Pemgn9vKvj3poJ/byr496aCf28q9FX9E4q6mi0=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 33\"", TraditionalForm]], 35->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRdswBK0EnuwBCFnW7YESzCS28Mcvmze/8vOQJjwLiYjJOL1
@@ -3863,6 +4227,14 @@ vVbo77VCf68V+nut0N9rhf5eK/T3WqG/1wr9vVbo77XCnrV/AGvXkNU=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 34\"", TraditionalForm]], 36->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8ENwjAQBC3RACVAJfRACUi8aZkSKIGg/FbcI5Gzd05mpGijfcTJ2JHl
@@ -3909,6 +4281,14 @@ dBmQVQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 35\"", TraditionalForm]], 37->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztmMEJwkAUBRdswBK0EnuwBMGzLVuCJRjJ7WEOH7Lv78/OQBh5B00GjeL1
@@ -3954,6 +4334,14 @@ Ub9HRrv/z/b9Plv/3p/To/7/kNXfZWW2/tlW6O+1Qn+vFfp7rdDfa4X+Xiv0
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 36\"", TraditionalForm]], 38->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlssJAkEQBQdMwBA0EnMwBMGzKRuCIbji7aGHhpnX0ztVsNTyLu6UHzzf
@@ -3999,6 +4387,14 @@ Ffp7rdDfa4X+Xiv091qhv9cK/b1W6O+1Qn+vFfas/Q3QO4c9
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 37\"", TraditionalForm]], 39->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl8EJwkAUBRdswBK0EnuwBCFnW7YESzCS28Mowv73/yYzEEYeJIQ5uHq+
@@ -4044,6 +4440,14 @@ ttq/6veksrf+2Vbo77VCf68V+nut0N9rhf5eK/T3WqG/1wr9vVbo77VCf68V
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 38\"", TraditionalForm]], 40->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl9EJwkAQBQ9swBK0EnuwBMFvW7YESzCSv4ciJ5e3u+cMhJH9kGTOeMnx
@@ -4089,6 +4493,13 @@ hf5eK/T3WqG/1wr9vVbo77VCf68V+nut0N9rhXnU/AnpuZ8p
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 39\"", TraditionalForm]], 41->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztl9EJwkAUBA9swBJiJfZgCYLftmwJlmAkf0uOcHC3757OQJiwICQTjHi5
@@ -4134,6 +4545,14 @@ rdDfa4X+Xiv091qhv9cK/b1W6O+1Qn+vFfp7rdDfa4U9av8AYNSrXw==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 40\"", TraditionalForm]], 42->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwkAQBQ9swBK0EnuwBMFvW7YESzDi3yNHWM2+vegMhAkLIZfhuBwv
@@ -4180,6 +4599,14 @@ ntB//jn283fztfqvtZ+z573vqZpn9+89H+2Wfb711pk9H23//9t/vOr8r3J2
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 41\"", TraditionalForm]], 43->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAABA9swBK0EnuwBMG3LVuCJaj4G8zjQm7vcsxAmLAPScZozrfH
@@ -4225,6 +4652,14 @@ NbF/1sT+WRP7Z03snzWxf9bE/lkT+2dN3Hvtb3a1sHs=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 42\"", TraditionalForm]], 44->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlt0JwjAcBwMu4Ag6iTs4guCzKzuCI6j4dtSHSPJLWu+gXPlDob2mH8fL
@@ -4270,6 +4705,14 @@ rIn9syb2z5rYP2ti/6yJ/bMm9s+a2D9rYv+sifNR8ydXa8qF
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 43\"", TraditionalForm]], 45->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAURQMu4Ah1EndwBKHfruwIjmClfwcfoiT3JfEeKEfeR9ucSHO6
@@ -4316,6 +4759,14 @@ NXF/rYn7a03cX2vi/loT99eauL/WxP21Ju6vNXF/rYn7a008z5o/AVS1yEc=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 44\"", TraditionalForm]], 46->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztklEKgkAABRe6QEeok3SHjhD03ZU7QkfI8G9ogwV97toMyMgDUUfPt8f1
@@ -4361,6 +4812,14 @@ nzWxf9bE/lkT+2dN7J81cd9qfwNL8s+h
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 45\"", TraditionalForm]], 47->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0EnuwBMGzLVuCJRjJbVAwIXnfjTOwTPiXZIddcrzc
@@ -4406,6 +4865,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 46\"", TraditionalForm]], 48->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztktEJwjAABQMu4Ag6iTs4guC3KzuCI1jx77BCpXlJ6h2UK++jtNccL7fz
@@ -4434,6 +4901,7 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -4450,6 +4918,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 47\"", TraditionalForm]], 49->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6iTs4guC3KzuCI1jp31ERMXlJ5A7ClQeFcvno8XI7
@@ -4495,6 +4971,14 @@ TeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 48\"", TraditionalForm]], 50->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAABA9swBK0EnuwBMG3LVuCJRjxNySPkNzenc5AmLAkcEweOd8e
@@ -4540,6 +5024,14 @@ P2ti/6yJ/bMm7q32N+9+xIs=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 49\"", TraditionalForm]], 51->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ah2EndwBKHfrtwRHMGKf0f7ITYvidxBuPKgUC7Q6f64
@@ -4585,6 +5077,14 @@ NbF/1sS91f4CMVbG6Q==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 50\"", TraditionalForm]], 52->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQNdwBF0EndwhILfruwIHcFK/476IcSXxN5BuPK+wgV6mR+3
@@ -4630,6 +5130,14 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 51\"", TraditionalForm]], 53->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6iTs4guC3K3cER7Di39EiLelLrHdQTh6Ulov0fHtc
@@ -4675,6 +5183,13 @@ rIn9syb2z5q4t9pfvd2z+Q==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 52\"", TraditionalForm]], 54->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBJiJfZgCULOtmwJlmDE26AIsnl/jTMQJjwIhFmSw/ly
@@ -4720,6 +5235,14 @@ c9/+f/xf9Xmut//tXEbrX/V9Ve2/0n/rJvbPmtg/a2L/rIn9syb2z5rYP2ti
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 53\"", TraditionalForm]], 55->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0EnuwBMGzLVuCJRjxNhgh8vN21RkIEx4Ywqy6P12O
@@ -4765,7 +5288,67 @@ Z03snzWxf9bE/lkT+2dN3Hvtd6RYnms=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
-                 PlotLabel->FormBox["\"t: 54\"", TraditionalForm]], 56->
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
+                 PlotLabel->FormBox["\"t: 54\"", TraditionalForm],
+                 ImageCache->GraphicsData["CompressedBitmap", "\<\
+eJzt3cuO21Qcx/EzySTjuRRQVy1i0TeAgcIjUCTEOzAqhHaBQKX7yg/ivgOb
+SNB12bV+hC7zGCbnZh8nTuKZ8UnOf/qtNLn49rM/f9sZ16N/frp6+ezX369e
+Pn969ejJi6s/nz1/+tej7/94sRw0PlJKfVDq6O9HSr+ulm/dwwdVVZUeufnp
+B/N0rMpipmYz+5PPF9+awePl40LN80KVy3ejtUlzNV9UX/ea1Cz1c5v5xDxN
+VVUWeqh5p38W81wVZfXYvDlrLdBMspx8ls/Vov360i+tY/Ll0kdu9dzCzbsH
+dj1+9GserMc3G8L17M26lqqYmXGXHRs/6Vjsg/Utn83aS9+y5eG6B+Mut0Gt
+L/1huA4TuxX5cqtcfWZF6bb+wi5xXvZV+NIMON84W1dUa1/wgGaHUt/5xZnt
+mLW2ZcNOoL4yY7PueZplfxHu9ZPW/ul2Z/W4XqN6+3bv+quTdi/6YevQ+9TO
+Xekp/CHw7kaj3prHE7ehs7pEulwe6Gjz7P/Ve4RzKucqd7PZzTG7RPVWz5X5
+bV4sJ3LbNV5btn6rf9SpeRxuWDbw8hLNqGtz5rj17lQUhTl04I7GfRoevUVp
+3vnXo93sr1+/HmTYttW9Qxk1+2f7px1qeYlmQAutvAxooZWXAS208jKg3S+t
+kX2jR9/vCW7/6WFmOj3s1atK/yyH6Uc7zM6qh+nH9rCsY1jXdLcZFjPDb28W
+bO8Q+zK00EILLbTQQgsttNBC+9HTHmvZf/XontdoXbgfG3hXxgD7MrTQQgst
+tNBCCy200B48A1po7y7tIJe/qWOkBA4ttOlkQAsttEI2G1pooYUWWmihHYSW
+u79p78vQQgsttNBCCy200EKbGu2JeVrrfHWMeCzxqXna2E1sjHwsed+bKJQ3
+TXImWvsfPcv99Rp1dCbbVSP3T+36s/Ztw7KetbxjNbLy3d3edp2UYL8le7ut
+3RTuuJ+63U33OLkc7PdIaKGFFlpooYX2o6UdpPNR32Fd4Ne9npcODi200EIL
+LbTQQgsttNBCC+0haK/9Z8W3AffDso4i9P2/il2F6VvUIYbtoUEatNBCCy20
+0EILLbTQQgsttIPQHvzyt++8t8IYYJ13bkd6+zK00EILLbTQQgsttNBCCy20
+Na2Yy9/kM+Tuy8lnQAutvAxooZWXAS208jKgPSDtyNIq203Ets+xw8JGU6bd
+xU16uiQvlFIVzlpVMJPopkb5XC3ar2/SdyR5pbQrodtJNS3ASlXYVlOmEms9
+qbYtpChdaZtxlDNaOdWFhZ6X16ooxYhWDHciMx8rnOgOfaIbh7s+H/x7rwK/
+2UKbWga00MrLgBZaeRnc6U0THFpoE8qAFlp5GdBCKy8DWmjlZUALrbwMLn/T
+BIcW2oQyoIVWXga00MrLgBZaeRnQQisvg8vfNMGhhTahDGihlZcBLbTyMqCF
+Vl4GtNDKy+DyN01waKFNKANaaOVlQAutvAxooZWXMVSbq5luCEO3i8hVmKqu
+NldLeV+ksE3SiGrs85iY+GG2Ik0Jeve4st191npe0cknWh3VudrU48o098lz
+lbvT26woFee3eJU4DQ6BlQZXpjKmnZI5AVKBKBXY3NVq0vqcd52tFKclfptN
+LQNaaOVlQAutvAxoD03L3d09g0MLbUIZ0EIrLwNaaOVlQAutvAxooZWXweVv
+muDQQptQBrTQysuAFlp5GdBCKy8DWmjlZXD5myY4tNAmlAEttPIyoIVWXga0
+0MrLgBZaeRlc/qYJDi20CWVAC628DGihlZcBLbTyMno0HRm3OluMzOO07t7T
+jDMdL+j+ErMQtsvLzHSvsq1FprYbTD5Xi6oKX9N5JFohfGsqs+sXZT1at6Ly
+h0XQIMZUYq2/la3PqS2ZW0jYmCxstUQto9XSnq+ymn5bDalAlNPaResY0D/6
+wDLHAae2fRfjvP6MqVtZ+QJUax/29HqLVwl+o4U2tQxooZWXAS208jK4w5sm
+OLTQJpQBLbTyMqCFVl4GtNDKy4AWWnkZXP6mCQ4ttAllQAutvAxooZWXAS20
+8jKghVZeBpe/aYJDC21CGdBCKy8DWmjlZUALrbwMaKGVl8Hlb5rg0EKbUAa0
+0MrLgBZaeRnQHpC2swfTuNWDaXWY/hlRkYgV2dSMKayAaytDx5JohXD7eKsZ
+08QNC6thpuvVhcm8tm1/whrShSleEW0fmZOgAVapijxXue9BsywNvWbincxO
+N7dgMic52+1nSgWiVSBTO/ou+c9333qpqvh8j1gQfpmFNrUMaKGVlwEttPIy
+oD00LTd39wwOLbQJZUALrbwMaKGVlwEttPIyoIVWXgaXv2mCQwttQhnQQisv
+A1po5WVAC628DGihlZfB5W+a4NBCm1AGtNDKy4AWWnkZ0EIrLwNaaOVl9KQ1
+sm/0aC5/9wIOLbQJZUALrbwMaKGVlwHtAWldr56wu5VuQ2I7WxwHw03XC3rA
+xCvERWfzKvNe94bx3Uia1/RDilYMu59ndQXqSlSuN5JtT2UqsNbTyh47Z/Wx
+42dsmiv5tj7NQihjjDLW3cWakm0qJd3Fop/amvZWjTqntr0XY/0DX5+U+MDf
+dyH4pRba1DKghVZeBrTQysuA9tC01/8b5wGGZQMvL9GMa+/Ld2OzoRWdAS20
+8jKghVZeBrTQysuAFlp5GZ202y5/6xne3WbUhxs+3bOLNPdq/fet2HuH6hM3
+qlrMVe5uHL5fGWXuL9q5VkaZW/CF/SuL92GWvinm78g3dyffrUyiM91NTH8z
+f2WS5mt7qnryW2JcmacT1Xw/jbt1qhfvXh+7eAvWuoPnv7dJhV+X9lu46HFr
+USc+LrwzW7X+YsHfK++7yAs3zOPotZx0fF3eL7sWkTW+QfmDtdi5XffcsOY7
+fMIvWPKFtSt1DS6/04VfD5gFf+wRxqyu7M9u08IldNS4bR5+IdSx0yhUsVMh
+WymFfjdtHW07tzhzM7X3tXqdt+wbnbu3OvofaGrtLQ==\
+\>"]], 56->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwlAUxR64gCPoJO7gCILfruwIjmDFv2CVyuXcogmUlAOWkoe6P12O
 580YYzdd2+l63D+5HcZL3Nex01e4+/3Wts/1Wfq8uefY/7u9qn/V+/zbbv/e
@@ -4810,6 +5393,14 @@ xP5ZE/tnTeyfNbF/1sT+WRP3rv0OiT2SVQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 55\"", TraditionalForm]], 57->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4NCguv7Cc5AmPBQWCaEHM/X
@@ -4855,6 +5446,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 56\"", TraditionalForm]], 58->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztk8EJwkAUBRdswBK0kvRgCYJnW7YESzDiyUEP6vf9iDMQJjxYWCZkuz/u
@@ -4900,6 +5499,14 @@ rIn9syb2z5q4d+0XCaKLmw==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 57\"", TraditionalForm]], 59->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlsEJwkAUBRdswBK0kvRgCYJnW7aElJCIJwc9qJ+3G5yBMOFBYJm95Hi+
@@ -4945,6 +5552,14 @@ W99//e5b27/mu+r+o91L1Xmq/n+q+lfdy9b30fr/q4n9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 58\"", TraditionalForm]], 60->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztktEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4cBo/GlxTsoVx4thGv3x/Ph
@@ -4990,6 +5605,14 @@ Z03snzWxf9bEfdR+A0kejZk=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 59\"", TraditionalForm]], 61->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlVEKgkAABRe6QEeok3iHjhD03ZU7QkfI6KuhJZT1reIMyMgDUUbQ8/V+
@@ -5008,13 +5631,13 @@ rIn9syb2z5rYP2ti/6yJe6/9BUhDj/c=
                     25}, {16, 25}}, {{0, 24}, {16, 24}}, {{0, 23}, {16, 
                     23}}, {{0, 22}, {16, 22}}, {{0, 21}, {16, 21}}, {{0, 
                     20}, {16, 20}}, {{0, 19}, {16, 19}}, {{0, 18}, {16, 
-                    18}}, {{0, 17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 
-                    15}, {16, 15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 
-                    13}}, {{0, 12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 
-                    10}, {16, 10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0,
-                     7}, {16, 7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 
-                    4}, {16, 4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 
-                    1}, {16, 1}}, {{0, 0}, {16, 0}}}],
+                    18}}, {{0, 17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 15},
+                     {16, 15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 13}}, {{0,
+                     12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 10}, {16, 
+                    10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0, 7}, {16, 
+                    7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 4}, {16, 
+                    4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 1}, {16, 
+                    1}}, {{0, 0}, {16, 0}}}],
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -5035,6 +5658,14 @@ rIn9syb2z5rYP2ti/6yJe6/9BUhDj/c=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 60\"", TraditionalForm]], 62->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlVEKgkAABRe6QEeok3iHjhD03ZU7QkfI8KshCWX3rdIMyMgDUUbQ8/V+
@@ -5080,6 +5711,13 @@ Yv+sif2zJvbPmtg/a+Lea38Bl/eNuQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 61\"", TraditionalForm]], 63->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4dBWtKXiHdQrjwoba/Q4/l6
@@ -5125,6 +5763,14 @@ NbF/1sT+WRP7Z03snzWxf9bEvdf+ACZMlvE=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 62\"", TraditionalForm]], 64->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4dFoslLxTsoVx6Uhvto98fz
@@ -5170,6 +5816,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sifuo/Qa3Xp3r
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 63\"", TraditionalForm]], 65->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCYJnW7YESzDiycFPFjcva5iBMPIwuEww++P5
@@ -5180,7 +5834,6 @@ cNqUUnbjtR2v++cH16G8xH3Z/TI8u7fz9bq/62b/Zfe5+/u8Pu+t+rfaa8//
                    "], {{0, 0}, {16, 32}}, {0, 1}], {
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
@@ -5215,6 +5868,14 @@ cNqUUnbjtR2v++cH16G8xH3Z/TI8u7fz9bq/62b/Zfe5+/u8Pu+t+rfaa8//
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 64\"", TraditionalForm]], 66->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztk8EJwkAUBRdswBK0kvRgCYJnW7YESzDiyUEPid+3q8xAmPBgMczi/ng+
@@ -5260,6 +5921,14 @@ z5rYP2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 65\"", TraditionalForm]], 67->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztkdsJwlAQBS/YgCVoJenBEgS/bdkSLMFIvhx8EIxnr2EGwoQDgTC7P54P
@@ -5295,8 +5964,8 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                     5, 32}}, {{6, 0}, {6, 32}}, {{7, 0}, {7, 32}}, {{8, 0}, {
                     8, 32}}, {{9, 0}, {9, 32}}, {{10, 0}, {10, 32}}, {{11, 
                     0}, {11, 32}}, {{12, 0}, {12, 32}}, {{13, 0}, {13, 
-                    32}}, {{14, 0}, {14, 32}}, {{15, 0}, {15, 32}}, {{16, 0},
-                     {16, 32}}}],
+                    32}}, {{14, 0}, {14, 32}}, {{15, 0}, {15, 32}}, {{16, 
+                    0}, {16, 32}}}],
                     Antialiasing->False]}}},
                  Axes->True,
                  AxesLabel->{
@@ -5305,6 +5974,14 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 66\"", TraditionalForm]], 68->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztk8sJAjEABQM2YAlayfZgCYJnW7YES1Dx5OCHaHyJ6wwsIw9WwkTX2/1m
@@ -5350,6 +6027,14 @@ nnOu+6fvvbL38nz/dv9W9zLX/12v/q3ua7T7rd1/pf9o99va5N/69zaxf9bE
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 67\"", TraditionalForm]], 69->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4dVqs1LsHdQTh5U4gXcH8+H
@@ -5395,6 +6080,14 @@ NbF/1sT+WRP7Z03snzWxf9bEvdV+A3MAo8c=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 68\"", TraditionalForm]], 70->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw9FoulLae+gXHlQCRfweL6e
@@ -5440,6 +6133,14 @@ mtg/a2L/rIn9syb2z5rYP2vi3mt/AG3EqGM=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 69\"", TraditionalForm]], 71->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztk9sJwkAUBRdswBK0kvRgCYLftmwJlmAkXw5GSdycjToDYcKFPJib7I/n
@@ -5485,6 +6186,14 @@ Z03snzWxf9bE/lkT+2dN7J81sX/WxHmr+Q1taLPZ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 70\"", TraditionalForm]], 72->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztksEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4MiGzdvY5iBMOFDkmV+jufr
@@ -5530,6 +6239,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 71\"", TraditionalForm]], 73->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw9FWtPXtN5BOXlQDRfweL6e
@@ -5575,6 +6292,14 @@ z5rYP2ti/6yJ/bMm9s+a2D9r4r7U/gA7Sq99
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 72\"", TraditionalForm]], 74->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4ciqclrrXdQTh60hAu4P54P
@@ -5620,6 +6345,14 @@ p00pZTc+2/G5/35wHcpL3OfdL8Ozl3a+pe7vutV+r9V53Ke91/s8/7a3+v+p
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 73\"", TraditionalForm]], 75->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4ci0fQl1DsoJw8q4QK6P54P
@@ -5665,6 +6398,14 @@ mtg/a2L/rIn9syb2z5q499pvueq5NQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 74\"", TraditionalForm]], 76->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSrx6KRNOXUu+gXHlQCRfweL6e
@@ -5710,6 +6451,14 @@ syb2z5rYP2ti/6yJe6/9AcC0tDk=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 75\"", TraditionalForm]], 77->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCYJnW7YESzDiKYMfVjdvQ5yBMOFBwjKB7I/n
@@ -5755,6 +6504,14 @@ E/tnTeyfNbF/1sS9134DAaqvvQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 76\"", TraditionalForm]], 78->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DiVw8VGpOXgndQrjyoDSf0eL6e
@@ -5800,6 +6557,14 @@ nzWxf9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 77\"", TraditionalForm]], 79->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlF0KgkAABhe6QEeok3iHjhD03JU7QkfQ8MmhH7TtW6UZkJEPlGUEj+fr
@@ -5845,6 +6610,14 @@ xP5ZE/tnTeyfNXFvtfd/d61f
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 78\"", TraditionalForm]], 80->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -5873,7 +6646,6 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -5890,6 +6662,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 79\"", TraditionalForm]], 81->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0kvRgCYJnW7YESzDiKYMeVr5vI5mBZcKDhGUOOZ6v
@@ -5935,6 +6715,14 @@ tffe/9/3qv69tn/Ne9X9t7aP6q+XJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 80\"", TraditionalForm]], 82->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCYJnW7YESzDiKYMfVjdvQ5yBMOFBwjKB7I/n
@@ -5980,6 +6768,14 @@ E/tnTeyfNbF/1sS9134DAaqvvQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 81\"", TraditionalForm]], 83->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -6025,6 +6821,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 82\"", TraditionalForm]], 84->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -6070,6 +6874,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 83\"", TraditionalForm]], 85->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCYJnW7YESzDiKYMfVjdvQ5yBMOFBwjKB7I/n
@@ -6115,6 +6927,14 @@ E/tnTeyfNbF/1sS9134DAaqvvQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 84\"", TraditionalForm]], 86->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -6160,6 +6980,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 85\"", TraditionalForm]], 87->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -6205,6 +7033,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 86\"", TraditionalForm]], 88->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlF0KgkAABhe6QEeok3iHjhD03JU7QkfQ8MmhH7TtW6UZkJEPlGUEj+fr
@@ -6233,6 +7069,7 @@ xP5ZE/tnTeyfNXFvtfd/d61f
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -6249,6 +7086,14 @@ xP5ZE/tnTeyfNXFvtfd/d61f
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 87\"", TraditionalForm]], 89->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCULOtmwJlmAkJ4cIfjZvVzIDYcKDhGUCOZ4v
@@ -6294,6 +7139,14 @@ NbF/1sT+WRP3VvsdR8utXw==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 88\"", TraditionalForm]], 90->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -6339,6 +7192,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 89\"", TraditionalForm]], 91->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4ciqfEl6h2Ukwct8Qrd7o+7
@@ -6356,14 +7217,14 @@ f9bE/lkT+2dN7J81ce+1XwBe7rR5
                     28}}, {{0, 27}, {16, 27}}, {{0, 26}, {16, 26}}, {{0, 
                     25}, {16, 25}}, {{0, 24}, {16, 24}}, {{0, 23}, {16, 
                     23}}, {{0, 22}, {16, 22}}, {{0, 21}, {16, 21}}, {{0, 
-                    20}, {16, 20}}, {{0, 19}, {16, 19}}, {{0, 18}, {16, 
-                    18}}, {{0, 17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 
-                    15}, {16, 15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 
-                    13}}, {{0, 12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 
-                    10}, {16, 10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0,
-                     7}, {16, 7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 
-                    4}, {16, 4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 
-                    1}, {16, 1}}, {{0, 0}, {16, 0}}}],
+                    20}, {16, 20}}, {{0, 19}, {16, 19}}, {{0, 18}, {16, 18}}, 
+                    {{0, 17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 15}, {16, 
+                    15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 13}}, {{0, 
+                    12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 10}, {16, 
+                    10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0, 7}, {16, 
+                    7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 4}, {16, 
+                    4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 1}, {16, 
+                    1}}, {{0, 0}, {16, 0}}}],
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -6384,6 +7245,14 @@ f9bE/lkT+2dN7J81ce+1XwBe7rR5
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 90\"", TraditionalForm]], 92->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4Me1PX9VWcgTHgQWSYQt/vj
@@ -6429,6 +7298,14 @@ xP5ZE/tnTdyr9gt8w7R5
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 91\"", TraditionalForm]], 93->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4f9iMaXGu+gXHlQCRdwfzwf
@@ -6474,6 +7351,14 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 92\"", TraditionalForm]], 94->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4Me1PX9VWcgTHgQWSYQt/vj
@@ -6519,6 +7404,14 @@ xP5ZE/tnTdyr9gt8w7R5
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 93\"", TraditionalForm]], 95->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4ciqfEl6h2Ukwct8Qrd7o+7
@@ -6529,7 +7422,6 @@ f9bE/lkT+2dN7J81ce+1XwBe7rR5
                    "], {{0, 0}, {16, 32}}, {0, 1}], {
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
@@ -6564,6 +7456,14 @@ f9bE/lkT+2dN7J81ce+1XwBe7rR5
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 94\"", TraditionalForm]], 96->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQNdwBHsJN3BEQS/XbkjOIIVv3woaI2XqHdQrjxoCVfouD/u
@@ -6609,6 +7509,14 @@ if1ZJ/Znnbi32s+SQ6+9
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 95\"", TraditionalForm]], 97->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlVEKgkAABRe6QEeok3iHjhD03ZU7QkfI6KshkXT3qTUDMvFAWefDjufr
@@ -6654,6 +7562,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 96\"", TraditionalForm]], 98->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEewk3iHjhD43ZU7QkfI8MuhPrT1rdIMyMgDZRnBy+1+
@@ -6699,6 +7615,14 @@ E/tnTeyfNXFvtb8AxHSrAQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 97\"", TraditionalForm]], 99->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEeok3iHjhD03ZU7gkfI8MuhIHV7u9AMyMgDZZ0Pz9f7
@@ -6744,6 +7668,14 @@ nzWxf9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 98\"", TraditionalForm]], 100->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6SXdwBMFvV3YER7DSrx5KaUxeC95BOXlQG06o5+v9
@@ -6789,6 +7721,14 @@ P2ti/6yJ/bMm9s+a2D9rYv+sif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 99\"", TraditionalForm]], 101->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQNdwBHsJN3BEQS/XbkjOIIVv3woaI2XqHdQrjxoCVfouD/u
@@ -6834,6 +7774,14 @@ if1ZJ/Znnbi32s+te61/
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 100\"", TraditionalForm]], 102->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCULOtmwJlmAkJ4cIfjZvVzIDYcKDhGUCOZ4v
@@ -6879,6 +7827,13 @@ NbF/1sT+WRP3VvsdYwOrIQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 101\"", TraditionalForm]], 103->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw9Fo+lLqXdQrjxoCVfo/ng+
@@ -6924,6 +7879,14 @@ mtg/a2L/rIl7r/0GI5SmZQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 102\"", TraditionalForm]], 104->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw/FVtOXiHcQrjxoCffR/fF8
@@ -6969,6 +7932,14 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 103\"", TraditionalForm]], 105->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4NBV9e3C85AGHkQ+cxB98fz
@@ -6979,7 +7950,6 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                    "], {{0, 0}, {16, 32}}, {0, 1}], {
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
@@ -7014,6 +7984,14 @@ f9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE/lkT
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 104\"", TraditionalForm]], 106->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQNdwBHsJN3BEQS/XbkjOIIVv3woaI2XqHdQrjxoCVfouD/u
@@ -7059,6 +8037,14 @@ if1ZJ/Znnbi32s+te61/
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 105\"", TraditionalForm]], 107->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlFEKgkAABRe6QEeok3iHjhD43ZU7QkfI8KvBCG19bjgDMvJAWUbwfL1d
@@ -7104,6 +8090,14 @@ P2ti/6yJ/bMm9s+auG+1PwECzq+9
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 106\"", TraditionalForm]], 108->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4Me1PX9VWcgTHgQWSYQt/vj
@@ -7119,16 +8113,16 @@ xP5ZE/tnTdyr9guX+7I7
                     LineBox[{{{0, 32}, {16, 32}}, {{0, 31}, {16, 31}}, {{0, 
                     30}, {16, 30}}, {{0, 29}, {16, 29}}, {{0, 28}, {16, 
                     28}}, {{0, 27}, {16, 27}}, {{0, 26}, {16, 26}}, {{0, 
-                    25}, {16, 25}}, {{0, 24}, {16, 24}}, {{0, 23}, {16, 
-                    23}}, {{0, 22}, {16, 22}}, {{0, 21}, {16, 21}}, {{0, 
-                    20}, {16, 20}}, {{0, 19}, {16, 19}}, {{0, 18}, {16, 
-                    18}}, {{0, 17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 
-                    15}, {16, 15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 
-                    13}}, {{0, 12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 
-                    10}, {16, 10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0,
-                     7}, {16, 7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 
-                    4}, {16, 4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 
-                    1}, {16, 1}}, {{0, 0}, {16, 0}}}],
+                    25}, {16, 25}}, {{0, 24}, {16, 24}}, {{0, 23}, {16, 23}}, 
+                    {{0, 22}, {16, 22}}, {{0, 21}, {16, 21}}, {{0, 20}, {16, 
+                    20}}, {{0, 19}, {16, 19}}, {{0, 18}, {16, 18}}, {{0, 
+                    17}, {16, 17}}, {{0, 16}, {16, 16}}, {{0, 15}, {16, 
+                    15}}, {{0, 14}, {16, 14}}, {{0, 13}, {16, 13}}, {{0, 
+                    12}, {16, 12}}, {{0, 11}, {16, 11}}, {{0, 10}, {16, 
+                    10}}, {{0, 9}, {16, 9}}, {{0, 8}, {16, 8}}, {{0, 7}, {16, 
+                    7}}, {{0, 6}, {16, 6}}, {{0, 5}, {16, 5}}, {{0, 4}, {16, 
+                    4}}, {{0, 3}, {16, 3}}, {{0, 2}, {16, 2}}, {{0, 1}, {16, 
+                    1}}, {{0, 0}, {16, 0}}}],
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
@@ -7149,6 +8143,14 @@ xP5ZE/tnTdyr9guX+7I7
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 107\"", TraditionalForm]], 109->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAABA9swBK0kvRgCYJvW7YESzCSl4M+LiZ7FzIDYWQh8ZhAztf7
@@ -7194,6 +8196,14 @@ Ut//re9k7ve8dv/3vW3Na7/H2v/dW/9eTeyfNbF/1sT+WRP7Z03snzWxf9bE
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 108\"", TraditionalForm]], 110->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4OC0fj+qjMQRh4kbEbIdn/c
@@ -7239,6 +8249,14 @@ NbF/1sT+WRP3qv0CvyOv3Q==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 109\"", TraditionalForm]], 111->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4Me1PX9VWcgTHgQWSYQt/vj
@@ -7284,6 +8302,14 @@ xP5ZE/tnTdyr9guX+7I7
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 110\"", TraditionalForm]], 112->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4OC0fj+qjMQRh4kbEbIdn/c
@@ -7329,6 +8355,14 @@ NbF/1sT+WRP3qv0CvyOv3Q==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 111\"", TraditionalForm]], 113->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQNdwBHsJN3BEQS/XbkjOIIVv3woaI2XqHdQrjxoCVfouD/u
@@ -7374,6 +8408,14 @@ if1ZJ/Znnbi32s+te61/
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 112\"", TraditionalForm]], 114->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4dFo+lLwDsoVx5Ww33U/fF8
@@ -7419,6 +8461,14 @@ TeyfNbF/1sT+WRP7Z03snzVx77XfAMdDr30=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 113\"", TraditionalForm]], 115->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw9Fo8lLwTsoVx4o6RW6P54P
@@ -7447,6 +8497,7 @@ nzWxf9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -7463,6 +8514,14 @@ nzWxf9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 114\"", TraditionalForm]], 116->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAABA9swBJiJenBEoS8bdkSLMGILwdFTy97EWcgTFhIcswju8Nx
@@ -7508,6 +8567,14 @@ xP5ZE/tnTeyfNXHvtV8AIemx2w==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 115\"", TraditionalForm]], 117->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw9Fo+lLqXdQrjxoCVfo/ng+
@@ -7536,7 +8603,6 @@ mtg/a2L/rIl7r/0GI5SmZQ==
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -7553,6 +8619,14 @@ mtg/a2L/rIl7r/0GI5SmZQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 116\"", TraditionalForm]], 118->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlcEJwkAABA9swBJiJenBEoS8bdkSLMGILwfFqOfeSWYgjCxGLvOIu8Nx
@@ -7598,6 +8672,14 @@ TeyfNbF/1sT+WRP3VvsF7xivvQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 117\"", TraditionalForm]], 119->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAABA9swBK0kvRgCYJvW7YESzCSVwbz8LzbCzgDYcJCkmMeOV/v
@@ -7643,6 +8725,14 @@ nzWxf9bE/lkT+2dN7J81sX/WxP5ZE/tnTeyfNbF/1sT+WRP7Z03snzWxf9bE
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 118\"", TraditionalForm]], 120->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0kvRgCYJnW7YESzDiycGgq7tvA85AGHlg+Izg/ng+
@@ -7688,6 +8778,14 @@ Yv+sif2zJvbPmtg/a+I+ar8BTZ+x2w==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 119\"", TraditionalForm]], 121->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlVEKgkAABRe6QEewk3iHjhD43ZU7QkfI6Kuh0FLfbjQDMvJAWeZDD6fz
@@ -7733,6 +8831,14 @@ JvbPmtg/a2L/rIl7rf0G13CtXw==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 120\"", TraditionalForm]], 122->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0kvRgCULOtmwJlmAkJ4d4UOLbHzIDYcKDhGUCOV9v
@@ -7761,6 +8867,7 @@ tf7/W99J1f58bmuu9t331r+qif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -7777,6 +8884,14 @@ tf7/W99J1f58bmuu9t331r+qif2zJvbPmtg/a2L/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 121\"", TraditionalForm]], 123->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlN0JwjAABgMu4Ag6SXdwBKHPruwIjmClTx4t/hC/RL2DcvJBJZ6Q/fF0
@@ -7822,6 +8937,14 @@ rfu/t/3Z35O652vd/3yvtXv73x91XjP5lv6/YmL/rIn9syb2z5rYP2ti/6yJ
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 122\"", TraditionalForm]], 124->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAUBRdswBK0kvRgCYJnW7YESzCSk4OC0fj+qjMQRh4kbEbIdn/c
@@ -7867,6 +8990,14 @@ NbF/1sT+WRP3qv0CvyOv3Q==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 123\"", TraditionalForm]], 125->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMsJwkAABRdswBK0kvRgCYJnW7YESzCSk4OLJm7eBpyBMOFhfnPweL6e
@@ -7912,6 +9043,14 @@ xP5ZE/tnTeyfNbF/1sT+WRP7Z03ce+0P28q41Q==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 124\"", TraditionalForm]], 126->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlNEJwjAABQMu4Ag6SXdwBMFvV3YER7DSLw9Fo+lLqXdQrjxoCVfo/ng+
@@ -7957,6 +9096,14 @@ mtg/a2L/rIl7r/0GI5SmZQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 125\"", TraditionalForm]], 127->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4elrTYvLd5BOXloCCfo8Xw9
@@ -7985,7 +9132,6 @@ TeyfNbF/1sT+WRP7Z03cW+0P4e+4tQ==
                     Antialiasing->False]}, 
                    {GrayLevel[
                     NCache[-1 + GoldenRatio, 0.6180339887498949]], 
-                    
                     StyleBox[
                     LineBox[{{{0, 0}, {0, 32}}, {{1, 0}, {1, 32}}, {{2, 0}, {
                     2, 32}}, {{3, 0}, {3, 32}}, {{4, 0}, {4, 32}}, {{5, 0}, {
@@ -8002,6 +9148,14 @@ TeyfNbF/1sT+WRP7Z03cW+0P4e+4tQ==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 126\"", TraditionalForm]], 128->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztldEJwjAABQMu4Ag6SXdwBMFvV3YER7Dil4dFo+lL1TsoVx5UwhXqdn/c
@@ -8047,6 +9201,14 @@ NbF/1sT+WRP7Z03ce+0XaDGoow==
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 127\"", TraditionalForm]], 129->
                 GraphicsBox[{RasterBox[CompressedData["
 1:eJztlMEJwkAABA9swBJiJenBEgTftmwJlmDEVwZDYrjsRZyBMLKYcMzjTpfb
@@ -8092,8 +9254,16 @@ WRP7Z03snzWxf9bE/lkT91b7E10Hsfs=
                  Frame->False,
                  FrameLabel->{None, None},
                  FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "AxisPadding" -> Scaled[0.02], "DefaultBoundaryStyle" -> 
+                   Automatic, "DefaultPlotStyle" -> Automatic, 
+                   "DomainPadding" -> Scaled[0.02], "RangePadding" -> 
+                   Scaled[0.05]},
                  PlotLabel->FormBox["\"t: 128\"", TraditionalForm]]}, 
-                Dynamic[$CellContext`i61$$],
+                Dynamic[$CellContext`i5$$],
                 Alignment->Automatic,
                 ImageSize->All],
                Identity,
@@ -8136,14 +9306,14 @@ WRP7Z03snzWxf9bE/lkT91b7E10Hsfs=
            CurrentValue["PreviousFormatTime"], 
            CurrentValue["CurrentFormatTime"]]& , {
            
-           Manipulate`Dump`controllerLink[{$CellContext`i61$$, \
-$CellContext`i61$115490$$}, "X1", 
+           Manipulate`Dump`controllerLink[{$CellContext`i5$$, \
+$CellContext`i5$73505$$}, "X1", 
             If["DefaultAbsolute", True, "JB1"], False, {1, 129, 1}, 129, 
             1.]}], 
          CurrentValue[{
           "ControllerData", {
            "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
-       ImageSizeCache->{311., {242.75, 247.75}}],
+       ImageSizeCache->{311., {241.75, 248.75}}],
       DefaultBaseStyle->{},
       FrameMargins->{{5, 5}, {5, 5}}],
      BaselinePosition->Automatic,
@@ -8176,7 +9346,8 @@ $CellContext`i61$115490$$}, "X1",
    3.6136378004662876`*^9, 3.613637855544438*^9, 3.6136419552969303`*^9, 
    3.613642221283144*^9, {3.613650843018279*^9, 3.613650851367757*^9}, 
    3.6136521505610666`*^9, 3.613664175351845*^9, 3.613910995446495*^9, 
-   3.6145324423575478`*^9, 3.616175610976218*^9, 3.616175802184499*^9}]
+   3.6145324423575478`*^9, 3.616175610976218*^9, 3.616175802184499*^9, 
+   3.627702131445772*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8191,7 +9362,7 @@ Cell[BoxData[
   RowBox[{"129", ",", "16", ",", "32"}], "}"}]], "Output",
  CellChangeTimes->{3.613591580414958*^9, 3.613593306925709*^9, 
   3.6136641863004713`*^9, 3.6139110321445937`*^9, 3.614532442376549*^9, 
-  3.6161756110252247`*^9}]
+  3.6161756110252247`*^9, 3.6277021608484535`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8273,12 +9444,12 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 128, 1}}, Typeset`size$$ = {
-    360., {150., 154.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$68608$$ = 0}, 
+    360., {149., 153.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$75255$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$68608$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$75255$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -8308,7 +9479,7 @@ $CellContext`t$$ + 1, $CellContext`i, $CellContext`j]}, {$CellContext`i,
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {188., 193.}},
+     ImageSizeCache->{411., {186., 193.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8323,7 +9494,7 @@ $CellContext`t$$ + 1, $CellContext`i, $CellContext`j]}, {$CellContext`i,
    3.6135917505046864`*^9}, 3.613592001492042*^9, 3.61365222143312*^9, {
    3.6136526450663505`*^9, 3.6136526584821177`*^9}, 3.613653261729622*^9, 
    3.613653315106674*^9, 3.61391103313465*^9, 3.61453244239855*^9, 
-   3.616175611045227*^9}]
+   3.616175611045227*^9, 3.6277021769553747`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8411,17 +9582,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 18, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 29, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 128, 1}}, Typeset`size$$ = {
-    360., {186., 191.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$68644$$ = 0}, 
+    360., {186., 190.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$74518$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$68644$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$74518$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -8455,7 +9626,7 @@ $CellContext`t$$ + 1], {2}]]], AxesLabel -> {"x", "y"},
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {225., 230.}},
+     ImageSizeCache->{411., {223., 230.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8473,7 +9644,8 @@ $CellContext`t$$ + 1], {2}]]], AxesLabel -> {"x", "y"},
    3.613490733249131*^9, 3.613490741280591*^9}, {3.6134908459115753`*^9, 
    3.61349085035983*^9}, 3.6134909181467066`*^9, 3.613491020171542*^9, 
    3.613652251065815*^9, 3.6136526833545403`*^9, 3.613652730943262*^9, 
-   3.6139110494075813`*^9, 3.614532442856576*^9, 3.61617561129976*^9}]
+   3.6139110494075813`*^9, 3.614532442856576*^9, 3.61617561129976*^9, 
+   3.6277021715060635`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8541,17 +9713,17 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`t$$ = 33, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`t$$ = 27, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 128, 1}}, Typeset`size$$ = {
-    420., {186., 191.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$68711$$ = 0}, 
+    426., {186., 190.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$77571$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$68711$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$77571$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -8581,7 +9753,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{471., {225., 230.}},
+     ImageSizeCache->{477., {223., 230.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8594,7 +9766,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.6136534677554054`*^9, 3.613653537216378*^9}, 
    3.6136536010610304`*^9, 3.6136537157935925`*^9, {3.6136537884707494`*^9, 
    3.613653864590103*^9}, 3.613653899936125*^9, 3.6136539415765066`*^9, 
-   3.6139110610952497`*^9, 3.6145324428835773`*^9, 3.616175611398272*^9}]
+   3.6139110610952497`*^9, 3.6145324428835773`*^9, 3.616175611398272*^9, 
+   3.6277022427311373`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8660,12 +9833,12 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`t$$], 0, 128, 1}}, Typeset`size$$ = {
-    415., {186., 191.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`t$68780$$ = 0}, 
+    420., {186., 190.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`t$79471$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`t$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`t$$, $CellContext`t$68780$$, 0]}, 
+        Hold[$CellContext`t$$, $CellContext`t$79471$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -8695,7 +9868,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{466., {225., 230.}},
+     ImageSizeCache->{483., {223., 230.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -8706,7 +9879,8 @@ Cell[BoxData[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{{3.613664377493407*^9, 3.6136644114423485`*^9}, 
-   3.6139110780222178`*^9, 3.614532443362605*^9, 3.616175611547291*^9}]
+   3.6139110780222178`*^9, 3.614532443362605*^9, 3.616175611547291*^9, 
+   3.627702406167485*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -8718,16 +9892,17 @@ Cell["Clean up", "Section",
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"Uninstall", "[", "lbmML", "]"}], ";"}]], "Input",
+  RowBox[{"Uninstall", "[", "lbmLink", "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.5662449963646784`*^9, 3.566245000138894*^9}, {
-   3.566245116010522*^9, 3.5662451231389294`*^9}, 3.569143280850481*^9}]
+   3.566245116010522*^9, 3.5662451231389294`*^9}, 3.569143280850481*^9, 
+   3.627674623206499*^9}]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1433, 827},
-WindowMargins->{{Automatic, 151}, {56, Automatic}},
+WindowMargins->{{Automatic, 42}, {79, Automatic}},
 ShowSelection->True,
-FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (November 20, 2012)",
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -8735,148 +9910,149 @@ StyleDefinitions->"Default.nb"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Info3616182809-4577413"->{
-  Cell[73458, 1618, 285, 5, 40, "Print",
-   CellTags->"Info3616182809-4577413"]}
+ "Info3627678377-9086551"->{
+  Cell[82746, 1801, 283, 5, 40, "Print",
+   CellTags->"Info3627678377-9086551"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Info3616182809-4577413", 469981, 8737}
+ {"Info3627678377-9086551", 525010, 9912}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1485, 35, 263, 3, 90, "Title"],
-Cell[1751, 40, 1070, 21, 258, "Text"],
-Cell[2824, 63, 243, 5, 31, "Input"],
-Cell[3070, 70, 583, 11, 31, "Input"],
+Cell[1486, 35, 263, 3, 90, "Title"],
+Cell[1752, 40, 1070, 21, 258, "Text"],
+Cell[2825, 63, 243, 5, 31, "Input"],
+Cell[3071, 70, 555, 10, 31, "Input"],
+Cell[3629, 82, 529, 14, 52, "Input"],
 Cell[CellGroupData[{
-Cell[3678, 85, 609, 8, 79, "Section"],
-Cell[4290, 95, 945, 31, 31, "Input"],
+Cell[4183, 100, 609, 8, 63, "Section"],
+Cell[4795, 110, 945, 31, 31, "Input"],
 Cell[CellGroupData[{
-Cell[5260, 130, 519, 14, 31, "Input"],
-Cell[5782, 146, 1181, 18, 195, "Output"]
+Cell[5765, 145, 519, 14, 31, "Input"],
+Cell[6287, 161, 1205, 18, 195, "Output"]
 }, Open  ]],
-Cell[6978, 167, 717, 18, 31, "Input"],
+Cell[7507, 182, 717, 18, 31, "Input"],
 Cell[CellGroupData[{
-Cell[7720, 189, 337, 8, 72, "Input"],
-Cell[8060, 199, 477, 8, 31, "Output"],
-Cell[8540, 209, 434, 6, 31, "Output"]
+Cell[8249, 204, 337, 8, 72, "Input"],
+Cell[8589, 214, 501, 8, 31, "Output"],
+Cell[9093, 224, 454, 6, 31, "Output"]
 }, Open  ]],
-Cell[8989, 218, 1513, 41, 67, "Input"],
-Cell[10505, 261, 235, 5, 31, "Input"],
-Cell[10743, 268, 1068, 28, 46, "Input"],
-Cell[11814, 298, 1579, 39, 46, "Input"],
-Cell[13396, 339, 1494, 35, 46, "Input"],
+Cell[9562, 233, 1513, 41, 67, "Input"],
+Cell[11078, 276, 235, 5, 31, "Input"],
+Cell[11316, 283, 1068, 28, 46, "Input"],
+Cell[12387, 313, 1579, 39, 46, "Input"],
+Cell[13969, 354, 1494, 35, 46, "Input"],
 Cell[CellGroupData[{
-Cell[14915, 378, 627, 14, 52, "Input"],
-Cell[15545, 394, 688, 9, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[16270, 408, 798, 19, 52, "Input"],
-Cell[17071, 429, 781, 13, 31, "Output"]
-}, Open  ]],
-Cell[17867, 445, 663, 19, 92, "Input"],
-Cell[18533, 466, 1362, 33, 72, "Input"]
+Cell[15488, 393, 627, 14, 52, "Input"],
+Cell[16118, 409, 714, 10, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19932, 504, 568, 7, 79, "Section"],
-Cell[20503, 513, 413, 9, 52, "Input"],
-Cell[20919, 524, 539, 17, 52, "Input"],
-Cell[CellGroupData[{
-Cell[21483, 545, 4112, 100, 92, "Input"],
-Cell[25598, 647, 1749, 26, 31, "Output"]
+Cell[16869, 424, 798, 19, 52, "Input"],
+Cell[17670, 445, 805, 14, 31, "Output"]
+}, Open  ]],
+Cell[18490, 462, 663, 19, 92, "Input"],
+Cell[19156, 483, 1362, 33, 72, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27384, 678, 286, 6, 52, "Input"],
-Cell[27673, 686, 4182, 74, 252, "Output"]
+Cell[20555, 521, 568, 7, 63, "Section"],
+Cell[21126, 530, 413, 9, 52, "Input"],
+Cell[21542, 541, 539, 17, 52, "Input"],
+Cell[CellGroupData[{
+Cell[22106, 562, 4112, 100, 92, "Input"],
+Cell[26221, 664, 1771, 26, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31892, 765, 166, 3, 31, "Input"],
-Cell[32061, 770, 2568, 47, 447, "Output"]
+Cell[28029, 695, 286, 6, 52, "Input"],
+Cell[28318, 703, 4206, 74, 266, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34666, 822, 1376, 39, 68, "Input"],
-Cell[36045, 863, 480, 8, 31, "Output"]
-}, Open  ]],
-Cell[36540, 874, 796, 19, 52, "Input"],
-Cell[CellGroupData[{
-Cell[37361, 897, 2342, 52, 72, "Input"],
-Cell[39706, 951, 15614, 294, 379, "Output"]
+Cell[32561, 782, 166, 3, 31, "Input"],
+Cell[32730, 787, 2840, 54, 447, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55357, 1250, 1958, 44, 52, "Input"],
-Cell[57318, 1296, 12212, 231, 377, "Output"]
+Cell[35607, 846, 1376, 39, 68, "Input"],
+Cell[36986, 887, 502, 8, 31, "Output"]
+}, Open  ]],
+Cell[37503, 898, 796, 19, 52, "Input"],
+Cell[CellGroupData[{
+Cell[38324, 921, 2342, 52, 72, "Input"],
+Cell[40669, 975, 23576, 444, 378, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[64282, 1424, 1958, 44, 52, "Input"],
+Cell[66243, 1470, 12502, 239, 376, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69579, 1533, 148, 2, 79, "Section"],
-Cell[69730, 1537, 191, 5, 31, "Input"],
-Cell[69924, 1544, 519, 12, 52, "Input"],
-Cell[70446, 1558, 813, 13, 31, "Input"],
+Cell[78794, 1715, 148, 2, 63, "Section"],
+Cell[78945, 1719, 191, 5, 31, "Input"],
+Cell[79139, 1726, 519, 12, 52, "Input"],
+Cell[79661, 1740, 813, 13, 31, "Input"],
 Cell[CellGroupData[{
-Cell[71284, 1575, 337, 9, 52, "Input"],
-Cell[71624, 1586, 1616, 22, 31, "Output"]
+Cell[80499, 1757, 337, 9, 52, "Input"],
+Cell[80839, 1768, 1638, 22, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[73277, 1613, 178, 3, 31, "Input"],
-Cell[73458, 1618, 285, 5, 40, "Print",
- CellTags->"Info3616182809-4577413"]
+Cell[82514, 1795, 229, 4, 31, "Input"],
+Cell[82746, 1801, 283, 5, 40, "Print",
+ CellTags->"Info3627678377-9086551"]
 }, Open  ]],
-Cell[73758, 1626, 1087, 26, 31, "Input"],
+Cell[83044, 1809, 1139, 27, 31, "Input"],
 Cell[CellGroupData[{
-Cell[74870, 1656, 398, 8, 72, "Input"],
-Cell[75271, 1666, 1010, 15, 31, "Output"],
-Cell[76284, 1683, 1020, 15, 31, "Output"],
-Cell[77307, 1700, 1012, 15, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[78356, 1720, 1313, 34, 92, "Input"],
-Cell[79672, 1756, 2229, 35, 31, "Output"],
-Cell[81904, 1793, 2229, 35, 31, "Output"],
-Cell[84136, 1830, 3121, 55, 72, "Output"]
+Cell[84208, 1840, 398, 8, 72, "Input"],
+Cell[84609, 1850, 1034, 15, 31, "Output"],
+Cell[85646, 1867, 1044, 15, 31, "Output"],
+Cell[86693, 1884, 1034, 15, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[87294, 1890, 1819, 44, 72, "Input"],
-Cell[89116, 1936, 12516, 235, 248, "Output"]
+Cell[87764, 1904, 1313, 34, 92, "Input"],
+Cell[89080, 1940, 2253, 35, 31, "Output"],
+Cell[91336, 1977, 2253, 35, 31, "Output"],
+Cell[93592, 2014, 3145, 55, 72, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[101669, 2176, 601, 15, 72, "Input"],
-Cell[102273, 2193, 405, 7, 31, "Output"]
+Cell[96774, 2074, 1977, 49, 72, "Input"],
+Cell[98754, 2125, 6420, 141, 253, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[105211, 2271, 601, 15, 72, "Input"],
+Cell[105815, 2288, 433, 8, 31, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[102727, 2206, 155, 2, 79, "Section"],
+Cell[106297, 2302, 155, 2, 63, "Section"],
 Cell[CellGroupData[{
-Cell[102907, 2212, 1252, 24, 31, "Input"],
-Cell[104162, 2238, 341490, 5940, 526, "Output"]
+Cell[106477, 2308, 1252, 24, 31, "Input"],
+Cell[107732, 2334, 392796, 7015, 526, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[445689, 8183, 162, 3, 31, "Input"],
-Cell[445854, 8188, 251, 5, 31, "Output"]
+Cell[500565, 9354, 162, 3, 31, "Input"],
+Cell[500730, 9359, 275, 5, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[446142, 8198, 3197, 67, 92, "Input"],
-Cell[449342, 8267, 2863, 58, 398, "Output"]
+Cell[501042, 9369, 3197, 67, 92, "Input"],
+Cell[504242, 9438, 2887, 58, 396, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[452242, 8330, 3431, 78, 92, "Input"],
-Cell[455676, 8410, 3319, 65, 472, "Output"]
+Cell[507166, 9501, 3431, 78, 92, "Input"],
+Cell[510600, 9581, 3347, 66, 470, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[459032, 8480, 2520, 58, 72, "Input"],
-Cell[461555, 8540, 2830, 56, 472, "Output"]
+Cell[513984, 9652, 2520, 58, 72, "Input"],
+Cell[516507, 9712, 2858, 57, 470, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[464422, 8601, 2090, 51, 72, "Input"],
-Cell[466515, 8654, 2685, 54, 472, "Output"]
+Cell[519402, 9774, 2090, 51, 72, "Input"],
+Cell[521495, 9827, 2711, 55, 470, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[469249, 8714, 143, 2, 79, "Section"],
-Cell[469395, 8718, 226, 4, 31, "Input"]
+Cell[524255, 9888, 143, 2, 63, "Section"],
+Cell[524401, 9892, 254, 5, 31, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
@@ -8885,4 +10061,4 @@ Cell[469395, 8718, 226, 4, 31, "Input"]
 
 (* End of internal cache information *)
 
-(* NotebookSignature JuTtBvqYCYRcOA1bJTodkcY9 *)
+(* NotebookSignature AxDXIOeZLZfb4D1Wh7krW4wh *)

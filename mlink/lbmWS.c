@@ -1,5 +1,5 @@
-/// \file lbmML.c
-/// \brief Mathematica MathLink interface.
+/// \file lbmWS.c
+/// \brief Mathematica WSTP interface.
 //
 //	Copyright (c) 2014, Christian B. Mendl
 //	All rights reserved.
@@ -19,7 +19,7 @@
 #include "lbm2D.h"
 #include "lbm3D.h"
 #include "util.h"
-#include <mathlink.h>
+#include <wstp.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -35,12 +35,12 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 	// check range of omega parameter
 	if (omega < 0 || omega > 2)
 	{
-		MLEvaluate(stdlink, "Message[LatticeBoltzmann::invalidOmega]");
+		WSEvaluate(stdlink, "Message[LatticeBoltzmann::invalidOmega]");
 		// discard 'ReturnPacket'
-		MLNextPacket(stdlink);
-		MLNewPacket(stdlink);	// discard
+		WSNextPacket(stdlink);
+		WSNewPacket(stdlink);	// discard
 		// final output
-		MLPutSymbol(stdlink, "$Failed");
+		WSPutSymbol(stdlink, "$Failed");
 		return;
 	}
 
@@ -48,22 +48,22 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 	{
 		if (f0len != 9*SIZE_2D_X*SIZE_2D_Y)
 		{
-			MLEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionf0]");
+			WSEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionf0]");
 			// discard 'ReturnPacket'
-			MLNextPacket(stdlink);
-			MLNewPacket(stdlink);	// discard
+			WSNextPacket(stdlink);
+			WSNewPacket(stdlink);	// discard
 			// final output
-			MLPutSymbol(stdlink, "$Failed");
+			WSPutSymbol(stdlink, "$Failed");
 			return;
 		}
 		if (type0len != SIZE_2D_X*SIZE_2D_Y)
 		{
-			MLEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionType0]");
+			WSEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionType0]");
 			// discard 'ReturnPacket'
-			MLNextPacket(stdlink);
-			MLNewPacket(stdlink);	// discard
+			WSNextPacket(stdlink);
+			WSNewPacket(stdlink);	// discard
 			// final output
-			MLPutSymbol(stdlink, "$Failed");
+			WSPutSymbol(stdlink, "$Failed");
 			return;
 		}
 
@@ -83,12 +83,12 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 		lbm_field2D_t *fieldevolv = (lbm_field2D_t *)malloc(numsteps*sizeof(lbm_field2D_t));
 		if (fieldevolv == NULL)
 		{
-			MLEvaluate(stdlink, "Message[LatticeBoltzmann::outOfMemory]");
+			WSEvaluate(stdlink, "Message[LatticeBoltzmann::outOfMemory]");
 			// discard 'ReturnPacket'
-			MLNextPacket(stdlink);
-			MLNewPacket(stdlink);	// discard
+			WSNextPacket(stdlink);
+			WSNewPacket(stdlink);	// discard
 			// final output
-			MLPutSymbol(stdlink, "$Failed");
+			WSPutSymbol(stdlink, "$Failed");
 			return;
 		}
 
@@ -96,10 +96,10 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 		LatticeBoltzmann2DEvolution(&startfield, numsteps, *(real2 *)gravity, fieldevolv);
 
 		// return results to Mathematica
-		MLPutFunction(stdlink, "List", 3);
+		WSPutFunction(stdlink, "List", 3);
 
 		// cell types
-		MLPutFunction(stdlink, "List", numsteps);
+		WSPutFunction(stdlink, "List", numsteps);
 		for (i = 0; i < numsteps; i++)
 		{
 			int *type = (int *)malloc(SIZE_2D_X*SIZE_2D_Y * sizeof(int));
@@ -114,13 +114,13 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 			}
 
 			int dims[2] = { SIZE_2D_X, SIZE_2D_Y };
-			MLPutInteger32Array(stdlink, type, dims, NULL, 2);
+			WSPutInteger32Array(stdlink, type, dims, NULL, 2);
 
 			free(type);
 		}
 
 		// distribution functions
-		MLPutFunction(stdlink, "List", numsteps);
+		WSPutFunction(stdlink, "List", numsteps);
 		for (i = 0; i < numsteps; i++)
 		{
 			real *f = (real *)malloc(9*SIZE_2D_X*SIZE_2D_Y * sizeof(real));
@@ -135,13 +135,13 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 			}
 
 			int dims[3] = { SIZE_2D_X, SIZE_2D_Y, 9 };
-			MLPutReal32Array(stdlink, f, dims, NULL, 3);
+			WSPutReal32Array(stdlink, f, dims, NULL, 3);
 
 			free(f);
 		}
 
 		// cell masses
-		MLPutFunction(stdlink, "List", numsteps);
+		WSPutFunction(stdlink, "List", numsteps);
 		for (i = 0; i < numsteps; i++)
 		{
 			real *mass = (real *)malloc(SIZE_2D_X*SIZE_2D_Y * sizeof(real));
@@ -160,13 +160,13 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 			}
 
 			int dims[2] = { SIZE_2D_X, SIZE_2D_Y };
-			MLPutReal32Array(stdlink, mass, dims, NULL, 2);
+			WSPutReal32Array(stdlink, mass, dims, NULL, 2);
 
 			free(mass);
 		}
 
-		MLEndPacket(stdlink);
-		MLFlush(stdlink);
+		WSEndPacket(stdlink);
+		WSFlush(stdlink);
 
 		// clean up
 		for (i = 0; i < numsteps; i++)
@@ -180,22 +180,22 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 	{
 		if (f0len != 19*SIZE_3D_X*SIZE_3D_Y*SIZE_3D_Z)
 		{
-			MLEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionf0]");
+			WSEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionf0]");
 			// discard 'ReturnPacket'
-			MLNextPacket(stdlink);
-			MLNewPacket(stdlink);	// discard
+			WSNextPacket(stdlink);
+			WSNewPacket(stdlink);	// discard
 			// final output
-			MLPutSymbol(stdlink, "$Failed");
+			WSPutSymbol(stdlink, "$Failed");
 			return;
 		}
 		if (type0len != SIZE_3D_X*SIZE_3D_Y*SIZE_3D_Z)
 		{
-			MLEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionType0]");
+			WSEvaluate(stdlink, "Message[LatticeBoltzmann::invalidDimensionType0]");
 			// discard 'ReturnPacket'
-			MLNextPacket(stdlink);
-			MLNewPacket(stdlink);	// discard
+			WSNextPacket(stdlink);
+			WSNewPacket(stdlink);	// discard
 			// final output
-			MLPutSymbol(stdlink, "$Failed");
+			WSPutSymbol(stdlink, "$Failed");
 			return;
 		}
 
@@ -218,12 +218,12 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 		lbm_field3D_t *fieldevolv = (lbm_field3D_t *)malloc(numsteps*sizeof(lbm_field3D_t));
 		if (fieldevolv == NULL)
 		{
-			MLEvaluate(stdlink, "Message[LatticeBoltzmann::outOfMemory]");
+			WSEvaluate(stdlink, "Message[LatticeBoltzmann::outOfMemory]");
 			// discard 'ReturnPacket'
-			MLNextPacket(stdlink);
-			MLNewPacket(stdlink);	// discard
+			WSNextPacket(stdlink);
+			WSNewPacket(stdlink);	// discard
 			// final output
-			MLPutSymbol(stdlink, "$Failed");
+			WSPutSymbol(stdlink, "$Failed");
 			return;
 		}
 
@@ -231,10 +231,10 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 		LatticeBoltzmann3DEvolution(&startfield, numsteps, *(real3 *)gravity, fieldevolv);
 
 		// return results to Mathematica
-		MLPutFunction(stdlink, "List", 3);
+		WSPutFunction(stdlink, "List", 3);
 
 		// cell types
-		MLPutFunction(stdlink, "List", numsteps);
+		WSPutFunction(stdlink, "List", numsteps);
 		for (i = 0; i < numsteps; i++)
 		{
 			int *type = (int *)malloc(SIZE_3D_X*SIZE_3D_Y*SIZE_3D_Z * sizeof(int));
@@ -252,13 +252,13 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 			}
 
 			int dims[3] = { SIZE_3D_X, SIZE_3D_Y, SIZE_3D_Z };
-			MLPutInteger32Array(stdlink, type, dims, NULL, 3);
+			WSPutInteger32Array(stdlink, type, dims, NULL, 3);
 
 			free(type);
 		}
 
 		// distribution functions
-		MLPutFunction(stdlink, "List", numsteps);
+		WSPutFunction(stdlink, "List", numsteps);
 		for (i = 0; i < numsteps; i++)
 		{
 			real *f = (real *)malloc(19*SIZE_3D_X*SIZE_3D_Y*SIZE_3D_Z * sizeof(real));
@@ -276,13 +276,13 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 			}
 
 			int dims[4] = { SIZE_3D_X, SIZE_3D_Y, SIZE_3D_Z, 19 };
-			MLPutReal32Array(stdlink, f, dims, NULL, 4);
+			WSPutReal32Array(stdlink, f, dims, NULL, 4);
 
 			free(f);
 		}
 
 		// cell masses
-		MLPutFunction(stdlink, "List", numsteps);
+		WSPutFunction(stdlink, "List", numsteps);
 		for (i = 0; i < numsteps; i++)
 		{
 			real *mass = (real *)malloc(SIZE_3D_X*SIZE_3D_Y*SIZE_3D_Z * sizeof(real));
@@ -304,13 +304,13 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 			}
 
 			int dims[3] = { SIZE_3D_X, SIZE_3D_Y, SIZE_3D_Z };
-			MLPutReal32Array(stdlink, mass, dims, NULL, 3);
+			WSPutReal32Array(stdlink, mass, dims, NULL, 3);
 
 			free(mass);
 		}
 
-		MLEndPacket(stdlink);
-		MLFlush(stdlink);
+		WSEndPacket(stdlink);
+		WSFlush(stdlink);
 
 		// clean up
 		for (i = 0; i < numsteps; i++)
@@ -327,19 +327,19 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 //
 
 
-#if MACINTOSH_MATHLINK
+#if MACINTOSH_WSTP
 
 int main(int argc, char* argv[])
 {
 	/* Due to a bug in some standard C libraries that have shipped with
-	 * MPW, zero is passed to MLMain below.  (If you build this program
+	 * MPW, zero is passed to WSMain below.  (If you build this program
 	 * as an MPW tool, you can change the zero to argc.)
 	 */
 	argc = argc; /* suppress warning */
-	return MLMain(0, argv);
+	return WSMain(0, argv);
 }
 
-#elif WINDOWS_MATHLINK
+#elif WINDOWS_WSTP
 
 #if __BORLANDC__
 #pragma argsused
@@ -354,16 +354,16 @@ int PASCAL WinMain(HINSTANCE hinstCurrent, HINSTANCE hinstPrevious, LPSTR lpszCm
 
 	hinstPrevious = hinstPrevious; /* suppress warning */
 
-	if (!MLInitializeIcon(hinstCurrent, nCmdShow)) return 1;
-	MLScanString(argv, &argv_end, &lpszCmdLine, &buff_start);
-	return MLMain((int)(argv_end - argv), argv);
+	if (!WSInitializeIcon(hinstCurrent, nCmdShow)) return 1;
+	WSScanString(argv, &argv_end, &lpszCmdLine, &buff_start);
+	return WSMain((int)(argv_end - argv), argv);
 }
 
 #else
 
 int main(int argc, char* argv[])
 {
-	return MLMain(argc, argv);
+	return WSMain(argc, argv);
 }
 
 #endif

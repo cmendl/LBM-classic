@@ -3,8 +3,8 @@
 /// C implementation of the classical lattice Boltzmann method (LBM) using the D2Q9 and D3Q19 models, based on Nils Thuerey's PhD thesis (see Ref. 1).
 ///
 /// Compiling and running the C code:
-/// - Windows: Visual Studio project files are provided in the *vcproj* folder (standalone test and demonstration files) and the *vcproj_mlink* folder (Mathematica MathLink interface)
-/// - Linux, MacOSX etc: see the makefiles in the *bin* folder (standalone test and demonstration files) and the *mlink* folder (Mathematica MathLink interface)
+/// - Windows: Visual Studio project files are provided in the *vcproj* folder (standalone test and demonstration files) and the *vcproj_mlink* and *vcproj_wstp* folders (Mathematica MathLink/WSTP interface)
+/// - Linux, MacOSX etc: see the makefiles in the *bin* folder (standalone test and demonstration files) and the *mlink* folder (Mathematica MathLink/WSTP interface)
 ///
 /// The Mathematica `.cdf` (computable document format) demonstration files in the *test* folder can be viewed
 /// with the free [CDF Player](http://www.wolfram.com/cdf-player) or opened and edited with [Mathematica](http://www.wolfram.com/mathematica).

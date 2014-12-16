@@ -167,9 +167,9 @@
     <ClInclude Include="..\include\vector3D.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\doc\mainpage.dox" />
     <None Include="..\Doxyfile" />
-    <None Include="..\mainpage.dox" />
-    <None Include="..\mlink\lbm_mlink.tm" />
+    <None Include="..\mlink\lbm.tm" />
     <None Include="..\readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

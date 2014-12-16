@@ -13,26 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="MathLink">
-      <UniqueIdentifier>{ad1f2cf8-72d9-447a-bed4-30d4788523e3}</UniqueIdentifier>
+    <Filter Include="WSTP">
+      <UniqueIdentifier>{6afe6c4e-0a18-48d9-a3c8-efc106a679f5}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\lbm2D.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\lbm3D.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\util.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\mlink\lbm_mlink_windows.c">
-      <Filter>MathLink</Filter>
-    </ClCompile>
-    <ClCompile Include="..\mlink\lbmML.c">
-      <Filter>MathLink</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\lbm_common.h">
@@ -65,10 +48,27 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="..\mlink\lbm.tm">
-      <Filter>MathLink</Filter>
+      <Filter>WSTP</Filter>
     </None>
     <None Include="..\doc\mainpage.dox">
       <Filter>Resource Files</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\lbm2D.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lbm3D.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mlink\lbm_wstp_windows.c">
+      <Filter>WSTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mlink\lbmWS.c">
+      <Filter>WSTP</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
