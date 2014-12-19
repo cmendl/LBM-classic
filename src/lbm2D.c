@@ -40,7 +40,7 @@ static const int vel2Di[9][2] = {
 };
 
 /// \brief Velocity vectors for D2Q9 as floating-point values
-static const real2 vel2Dv[9] = {
+static const vec2_t vel2Dv[9] = {
 	{  0,  0 },		// zero direction
 	{ -1,  0 },		// 4 directions with velocity 1
 	{  1,  0 },
@@ -110,7 +110,7 @@ static inline void DFD2Q9_DeriveQuantities(dfD2Q9_t *df)
 ///
 /// \brief Calculate the equilibrium distribution function
 ///
-static inline void DFD2Q9_CalcEquilibrium(const real2 u, const real rho, real f_eq[9])
+static inline void DFD2Q9_CalcEquilibrium(const vec2_t u, const real rho, real f_eq[9])
 {
 	int i;
 
@@ -183,7 +183,7 @@ void LBM2DField_Free(lbm_field2D_t *field)
 ///
 /// \brief Collision step for D2Q9 (2 dimensions, 9 velocities)
 ///
-static inline void CalculateLBMCollisionStep2D(const lbm_field2D_t *restrict_ f0, const real2 gravity, lbm_field2D_t *restrict_ f_coll)
+static inline void CalculateLBMCollisionStep2D(const lbm_field2D_t *restrict_ f0, const vec2_t gravity, lbm_field2D_t *restrict_ f_coll)
 {
 	int x, y;
 	int i;
@@ -278,10 +278,10 @@ static inline real DFD2Q9_CalcEpsilon(const dfD2Q9_t *df)
 ///
 /// \brief Approximate the free surface normal using central differences of fluid fractions (epsilon parameter)
 ///
-static inline real2 LBM2DField_CalcNormal(const lbm_field2D_t *field, const int x, const int y)
+static inline vec2_t LBM2DField_CalcNormal(const lbm_field2D_t *field, const int x, const int y)
 {
 	// Eq. (4.6)
-	real2 normal;
+	vec2_t normal;
 	normal.x = 0.5f*(DFD2Q9_CalcEpsilon(LBM2DField_GetMod(field, x-1, y  )) - DFD2Q9_CalcEpsilon(LBM2DField_GetMod(field, x+1, y  )));
 	normal.y = 0.5f*(DFD2Q9_CalcEpsilon(LBM2DField_GetMod(field, x,   y-1)) - DFD2Q9_CalcEpsilon(LBM2DField_GetMod(field, x,   y+1)));
 
@@ -401,7 +401,7 @@ static inline void CalculateLBMStreamStep2D(const lbm_field2D_t *restrict_ f0, l
 				}
 
 				// calculate surface normal
-				const real2 normal = LBM2DField_CalcNormal(f0, x, y);
+				const vec2_t normal = LBM2DField_CalcNormal(f0, x, y);
 
 				// always use reconstructed atmospheric distribution function for directions along surface normal;
 				// separate loop to handle mass exchange correctly
@@ -607,7 +607,7 @@ static inline void UpdateTypesLBMStep2D(const lbm_field2D_t *restrict_ f0, lbm_f
 			dfD2Q9_t *df = LBM2DField_Get(f_next, x, y);
 
 			// calculate surface normal using 'f0', such that excess mass distribution is independent of the filled cell ordering
-			real2 normal = LBM2DField_CalcNormal(f0, x, y);
+			vec2_t normal = LBM2DField_CalcNormal(f0, x, y);
 
 			// excess mass
 			real mex;
@@ -764,7 +764,7 @@ static inline void UpdateTypesLBMStep2D(const lbm_field2D_t *restrict_ f0, lbm_f
 ///
 /// \brief Implement the LBM step for D2Q9 (2 dimensions, 9 velocities)
 ///
-static void CalculateLBMStep2D(const lbm_field2D_t *restrict_ f0, const real2 gravity, lbm_field2D_t *restrict_ f1)
+static void CalculateLBMStep2D(const lbm_field2D_t *restrict_ f0, const vec2_t gravity, lbm_field2D_t *restrict_ f1)
 {
 	// allocate intermediate fields for collision, stream and cell type step
 	lbm_field2D_t f_coll, f_strm, f_distr;
@@ -792,7 +792,7 @@ static void CalculateLBMStep2D(const lbm_field2D_t *restrict_ f0, const real2 gr
 ///
 /// \brief Lattice Boltzmann time evolution using D2Q9 (2 dimensions, 9 velocities)
 ///
-void LatticeBoltzmann2DEvolution(const lbm_field2D_t *restrict_ startfield, const int numsteps, const real2 gravity, lbm_field2D_t *restrict_ fieldevolv)
+void LatticeBoltzmann2DEvolution(const lbm_field2D_t *restrict_ startfield, const int numsteps, const vec2_t gravity, lbm_field2D_t *restrict_ fieldevolv)
 {
 	int it;
 

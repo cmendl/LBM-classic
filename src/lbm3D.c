@@ -50,7 +50,7 @@ static const int vel3Di[19][3] = {
 };
 
 /// \brief Velocity vectors for D3Q19 as floating-point values
-static const real3 vel3Dv[19] = {
+static const vec3_t vel3Dv[19] = {
 	{  0,  0,  0 },		// zero direction
 	{ -1,  0,  0 },		// 6 directions with velocity 1
 	{  1,  0,  0 },
@@ -134,7 +134,7 @@ static inline void DFD3Q19_DeriveQuantities(dfD3Q19_t *df)
 ///
 /// \brief Calculate the equilibrium distribution function
 ///
-static inline void DFD3Q19_CalcEquilibrium(const real3 u, const real rho, real f_eq[19])
+static inline void DFD3Q19_CalcEquilibrium(const vec3_t u, const real rho, real f_eq[19])
 {
 	int i;
 
@@ -207,7 +207,7 @@ void LBM3DField_Free(lbm_field3D_t *field)
 ///
 /// \brief Collision step for D3Q19 (3 dimensions, 19 velocities)
 ///
-static inline void CalculateLBMCollisionStep3D(const lbm_field3D_t *restrict_ f0, const real3 gravity, lbm_field3D_t *restrict_ f_coll)
+static inline void CalculateLBMCollisionStep3D(const lbm_field3D_t *restrict_ f0, const vec3_t gravity, lbm_field3D_t *restrict_ f_coll)
 {
 	int x, y, z;
 	int i;
@@ -305,10 +305,10 @@ static inline real DFD3Q19_CalcEpsilon(const dfD3Q19_t *df)
 ///
 /// \brief Approximate the free surface normal using central differences of fluid fractions (epsilon parameter)
 ///
-static inline real3 LBM3DField_CalcNormal(const lbm_field3D_t *field, const int x, const int y, const int z)
+static inline vec3_t LBM3DField_CalcNormal(const lbm_field3D_t *field, const int x, const int y, const int z)
 {
 	// Eq. (4.6)
-	real3 normal;
+	vec3_t normal;
 	normal.x = 0.5f*(DFD3Q19_CalcEpsilon(LBM3DField_GetMod(field, x-1, y  , z  )) - DFD3Q19_CalcEpsilon(LBM3DField_GetMod(field, x+1, y  , z  )));
 	normal.y = 0.5f*(DFD3Q19_CalcEpsilon(LBM3DField_GetMod(field, x,   y-1, z  )) - DFD3Q19_CalcEpsilon(LBM3DField_GetMod(field, x,   y+1, z  )));
 	normal.z = 0.5f*(DFD3Q19_CalcEpsilon(LBM3DField_GetMod(field, x,   y,   z-1)) - DFD3Q19_CalcEpsilon(LBM3DField_GetMod(field, x,   y,   z+1)));
@@ -431,7 +431,7 @@ static inline void CalculateLBMStreamStep3D(const lbm_field3D_t *restrict_ f0, l
 					}
 
 					// calculate surface normal
-					const real3 normal = LBM3DField_CalcNormal(f0, x, y, z);
+					const vec3_t normal = LBM3DField_CalcNormal(f0, x, y, z);
 
 					// always use reconstructed atmospheric distribution function for directions along surface normal;
 					// separate loop to handle mass exchange correctly
@@ -653,7 +653,7 @@ static inline void UpdateTypesLBMStep3D(const lbm_field3D_t *restrict_ f0, lbm_f
 				dfD3Q19_t *df = LBM3DField_Get(f_next, x, y, z);
 
 				// calculate surface normal using 'f0', such that excess mass distribution is independent of the filled cell ordering
-				real3 normal = LBM3DField_CalcNormal(f0, x, y, z);
+				vec3_t normal = LBM3DField_CalcNormal(f0, x, y, z);
 
 				// excess mass
 				real mex;
@@ -818,7 +818,7 @@ static inline void UpdateTypesLBMStep3D(const lbm_field3D_t *restrict_ f0, lbm_f
 ///
 /// \brief Implement the LBM step for D3Q19 (3 dimensions, 19 velocities)
 ///
-static void CalculateLBMStep3D(const lbm_field3D_t *restrict_ f0, const real3 gravity, lbm_field3D_t *restrict_ f1)
+static void CalculateLBMStep3D(const lbm_field3D_t *restrict_ f0, const vec3_t gravity, lbm_field3D_t *restrict_ f1)
 {
 	// allocate intermediate fields for collision, stream and cell type step
 	lbm_field3D_t f_coll, f_strm, f_distr;
@@ -846,7 +846,7 @@ static void CalculateLBMStep3D(const lbm_field3D_t *restrict_ f0, const real3 gr
 ///
 /// \brief Lattice Boltzmann time evolution using D3Q19 (3 dimensions, 19 velocities)
 ///
-void LatticeBoltzmann3DEvolution(const lbm_field3D_t *restrict_ startfield, const int numsteps, const real3 gravity, lbm_field3D_t *restrict_ fieldevolv)
+void LatticeBoltzmann3DEvolution(const lbm_field3D_t *restrict_ startfield, const int numsteps, const vec3_t gravity, lbm_field3D_t *restrict_ fieldevolv)
 {
 	int it;
 

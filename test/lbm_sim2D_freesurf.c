@@ -63,7 +63,7 @@ int main()
 
 	const real omega = 0.2f;
 	const int numsteps = 128;
-	const real2 gravity = { 0, (real)(-0.1) };
+	const vec2_t gravity = { 0, (real)(-0.1) };
 
 	printf("dimensions: %d x %d\n", SIZE_2D_X, SIZE_2D_Y);
 	printf("omega:      %g\n", omega);

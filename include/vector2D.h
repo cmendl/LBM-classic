@@ -32,14 +32,14 @@ typedef struct
 	real x;		//!< x component
 	real y;		//!< y component
 }
-real2;
+vec2_t;
 
 
 //_______________________________________________________________________________________________________________________
 ///
 /// \brief Dot product in 2D
 ///
-static inline real Vec2_Dot(const real2 a, const real2 b)
+static inline real Vec2_Dot(const vec2_t a, const vec2_t b)
 {
 	return a.x*b.x + a.y*b.y;
 }
@@ -49,9 +49,9 @@ static inline real Vec2_Dot(const real2 a, const real2 b)
 ///
 /// \brief Multiply by a scalar value
 ///
-static inline real2 Vec2_ScalarMultiply(const real s, const real2 v)
+static inline vec2_t Vec2_ScalarMultiply(const real s, const vec2_t v)
 {
-	real2 ret;
+	vec2_t ret;
 	ret.x = s*v.x;
 	ret.y = s*v.y;
 
@@ -63,7 +63,7 @@ static inline real2 Vec2_ScalarMultiply(const real s, const real2 v)
 ///
 /// \brief Norm (Euclidean length) of a vector
 ///
-static inline real Vec2_Norm(const real2 v)
+static inline real Vec2_Norm(const vec2_t v)
 {
 	// have to change to 'fabs' for 'typedef double real'
 	real a = fabsf(v.x);

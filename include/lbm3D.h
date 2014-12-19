@@ -48,7 +48,7 @@ typedef struct
 
 	// quantities derived from distribution functions
 	real rho;		//!< density
-	real3 u;		//!< velocity
+	vec3_t u;		//!< velocity
 
 	// keep track of fluid mass exchange
 	real mass;		//!< mass
@@ -98,7 +98,7 @@ static inline dfD3Q19_t *LBM3DField_GetMod(const lbm_field3D_t *field, const int
 //
 
 
-void LatticeBoltzmann3DEvolution(const lbm_field3D_t *restrict_ startfield, const int numsteps, const real3 gravity, lbm_field3D_t *restrict_ fieldevolv);
+void LatticeBoltzmann3DEvolution(const lbm_field3D_t *restrict_ startfield, const int numsteps, const vec3_t gravity, lbm_field3D_t *restrict_ fieldevolv);
 
 
 

@@ -33,14 +33,14 @@ typedef struct
 	real y;		//!< y component
 	real z;		//!< z component
 }
-real3;
+vec3_t;
 
 
 //_______________________________________________________________________________________________________________________
 ///
 /// \brief Dot product in 3D
 ///
-static inline real Vec3_Dot(const real3 a, const real3 b)
+static inline real Vec3_Dot(const vec3_t a, const vec3_t b)
 {
 	return a.x*b.x + a.y*b.y + a.z*b.z;
 }
@@ -50,9 +50,9 @@ static inline real Vec3_Dot(const real3 a, const real3 b)
 ///
 /// \brief Cross product
 ///
-static inline real3 Vec3_Cross(const real3 a, const real3 b)
+static inline vec3_t Vec3_Cross(const vec3_t a, const vec3_t b)
 {
-	real3 ret;
+	vec3_t ret;
 	ret.x = a.y*b.z - a.z*b.y;
 	ret.y = a.z*b.x - a.x*b.z; 
 	ret.z = a.x*b.y - a.y*b.x; 
@@ -65,9 +65,9 @@ static inline real3 Vec3_Cross(const real3 a, const real3 b)
 ///
 /// \brief Multiply by a scalar value
 ///
-static inline real3 Vec3_ScalarMultiply(const real s, const real3 v)
+static inline vec3_t Vec3_ScalarMultiply(const real s, const vec3_t v)
 {
-	real3 ret;
+	vec3_t ret;
 	ret.x = s*v.x;
 	ret.y = s*v.y;
 	ret.z = s*v.z;
@@ -80,7 +80,7 @@ static inline real3 Vec3_ScalarMultiply(const real s, const real3 v)
 ///
 /// \brief Norm (Euclidean length) of a vector
 ///
-static inline real Vec3_Norm(const real3 v)
+static inline real Vec3_Norm(const vec3_t v)
 {
 	// have to change to 'fabs' for 'typedef double real'
 	real a = fabsf(v.x);

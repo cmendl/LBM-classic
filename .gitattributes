@@ -3,8 +3,5 @@
 *.h  text
 *.tm text
 
-# treat Mathematica notebooks and "computable document format" (.cdf) files as binary
-*.nb  binary
-*.cdf binary
-
+# explicit declaration of binary files
 *.dat binary

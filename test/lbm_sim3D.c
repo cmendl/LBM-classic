@@ -59,12 +59,12 @@ static inline real LBM3DField_AverageMass(const lbm_field3D_t *field)
 ///
 /// \brief Calculate the average velocity of a field
 ///
-static inline real3 LBM3DField_AverageVelocity(const lbm_field3D_t *field)
+static inline vec3_t LBM3DField_AverageVelocity(const lbm_field3D_t *field)
 {
 	int x, y, z;
 
 	real rho = 0;
-	real3 vel = { 0 };
+	vec3_t vel = { 0 };
 	for (z = 0; z < SIZE_3D_Z; z++)
 	{
 		for (y = 0; y < SIZE_3D_Y; y++)
@@ -105,7 +105,7 @@ int main()
 
 	const real omega = 0.2f;
 	const int numsteps = 64;
-	const real3 gravity = { 0 };
+	const vec3_t gravity = { 0 };
 
 	printf("dimensions: %d x %d x %d\n", SIZE_3D_X, SIZE_3D_Y, SIZE_3D_Z);
 	printf("omega:      %g\n", omega);
@@ -161,11 +161,11 @@ int main()
 	printf("relative difference:  %g\n\n", fabsf(mass_final/mass_init - 1));
 
 	// check momentum conservation
-	real3 vel_init  = LBM3DField_AverageVelocity(&fieldevolv[0]);
-	real3 vel_final = LBM3DField_AverageVelocity(&fieldevolv[numsteps-1]);
+	vec3_t vel_init  = LBM3DField_AverageVelocity(&fieldevolv[0]);
+	vec3_t vel_final = LBM3DField_AverageVelocity(&fieldevolv[numsteps-1]);
 	printf("initial average velocity: (%g, %g, %g)\n",  vel_init.x,  vel_init.y,  vel_init.z);
 	printf("final   average velocity: (%g, %g, %g)\n", vel_final.x, vel_final.y, vel_final.z);
-	real3 vel_diff = {
+	vec3_t vel_diff = {
 		vel_final.x - vel_init.x,
 		vel_final.y - vel_init.y,
 		vel_final.z - vel_init.z

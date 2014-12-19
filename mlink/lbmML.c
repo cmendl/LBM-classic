@@ -93,7 +93,7 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 		}
 
 		// perform main calculation
-		LatticeBoltzmann2DEvolution(&startfield, numsteps, *(real2 *)gravity, fieldevolv);
+		LatticeBoltzmann2DEvolution(&startfield, numsteps, *(vec2_t *)gravity, fieldevolv);
 
 		// return results to Mathematica
 		MLPutFunction(stdlink, "List", 3);
@@ -228,7 +228,7 @@ void LatticeBoltzmann(real omega, int numsteps, real *gravity, long gravitylen, 
 		}
 
 		// perform main calculation
-		LatticeBoltzmann3DEvolution(&startfield, numsteps, *(real3 *)gravity, fieldevolv);
+		LatticeBoltzmann3DEvolution(&startfield, numsteps, *(vec3_t *)gravity, fieldevolv);
 
 		// return results to Mathematica
 		MLPutFunction(stdlink, "List", 3);

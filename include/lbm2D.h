@@ -46,7 +46,7 @@ typedef struct
 
 	// quantities derived from distribution functions
 	real rho;		//!< density
-	real2 u;		//!< velocity
+	vec2_t u;		//!< velocity
 
 	// keep track of fluid mass exchange
 	real mass;		//!< mass
@@ -97,7 +97,7 @@ static inline dfD2Q9_t *LBM2DField_GetMod(const lbm_field2D_t *field, const int 
 //
 
 
-void LatticeBoltzmann2DEvolution(const lbm_field2D_t *restrict_ startfield, const int numsteps, const real2 gravity, lbm_field2D_t *restrict_ fieldevolv);
+void LatticeBoltzmann2DEvolution(const lbm_field2D_t *restrict_ startfield, const int numsteps, const vec2_t gravity, lbm_field2D_t *restrict_ fieldevolv);
 
 
 

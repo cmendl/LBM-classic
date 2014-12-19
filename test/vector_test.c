@@ -16,7 +16,7 @@ int main()
 		// reference value of norm
 		real n_ref = (real)(sqrt(733.0)/6);
 
-		real2 v;
+		vec2_t v;
 		v.x = x;
 		v.y = y;
 		real err = fabsf(Vec2_Norm(v) - n_ref);
@@ -39,7 +39,7 @@ int main()
 		// reference value of norm
 		real n_ref = (real)(sqrt(20089.0)/30);
 
-		real3 v;
+		vec3_t v;
 
 		// x, y, z
 		v.x = x;
